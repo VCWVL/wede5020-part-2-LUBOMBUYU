@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechFlow Solutions</title>
+    <title>TechFlow Solutions - Services & Pricing</title>
     <meta name="description" content="TechFlow Solutions empowers your business through Custom Software, Mobile Apps, and IT Consulting. Future-proof your digital presence.">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/head.js"></script>
@@ -26,10 +26,12 @@
 
     <!-- Services Section -->
     <main class="services">
-        <h1>Our Services</h1>
+        <h1>Our Services & Pricing</h1>
+        <p class="services-intro">Choose from our comprehensive range of services designed to accelerate your business growth. All packages include dedicated support and regular updates.</p>
+        
         <div class="services-container">
-            <!-- Service: Custom Software -->
-            <article class="service-item">
+            <!-- Service: Custom Software Development -->
+            <article id="custom-software" class="service-item">
                 <img src="images/custom software development.png" alt="Custom Software Development Icon" loading="lazy">
                 <h3>Custom Software Development</h3>
                 <p>We develop tailored software solutions that streamline your operations and boost productivity. Our experts craft scalable and secure applications suited for your exact needs.</p>
@@ -39,10 +41,27 @@
                     <li>Cloud-based solutions</li>
                     <li>API integration</li>
                 </ul>
+                <div class="pricing">
+                    <div class="price-tier">
+                        <h4>Starter Package</h4>
+                        <span class="price">R15,000 - R35,000</span>
+                        <p>Basic web application with core features</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Professional Package</h4>
+                        <span class="price">R35,000 - R75,000</span>
+                        <p>Advanced features with integrations</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Enterprise Package</h4>
+                        <span class="price">R75,000+</span>
+                        <p>Complex systems with full customization</p>
+                    </div>
+                </div>
             </article>
 
             <!-- Service: Mobile App Solutions -->
-            <article class="service-item">
+            <article id="mobile-apps" class="service-item">
                 <img src="images/mobile app solutions.png" alt="Mobile App Solutions Icon" loading="lazy">
                 <h3>Mobile App Solutions</h3>
                 <p>We design and develop mobile apps that drive user engagement across platforms. From user experience to app store deployment, we handle everything.</p>
@@ -52,10 +71,27 @@
                     <li>App store deployment</li>
                     <li>Maintenance & support</li>
                 </ul>
+                <div class="pricing">
+                    <div class="price-tier">
+                        <h4>Basic App</h4>
+                        <span class="price">R20,000 - R40,000</span>
+                        <p>Single platform (iOS/Android)</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Cross-Platform App</h4>
+                        <span class="price">R40,000 - R80,000</span>
+                        <p>Both iOS and Android</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Enterprise App</h4>
+                        <span class="price">R80,000+</span>
+                        <p>Complex features & integrations</p>
+                    </div>
+                </div>
             </article>
 
             <!-- Service: IT Consulting -->
-            <article class="service-item">
+            <article id="it-consulting" class="service-item">
                 <img src="images/it consulting.png" alt="IT Consulting Icon" loading="lazy">
                 <h3>IT Consulting</h3>
                 <p>We help organizations make smart tech decisions. Our consulting services include strategy, infrastructure, cybersecurity, and long-term digital transformation planning.</p>
@@ -65,8 +101,181 @@
                     <li>Cybersecurity assessment</li>
                     <li>IT project management</li>
                 </ul>
+                <div class="pricing">
+                    <div class="price-tier">
+                        <h4>Hourly Consulting</h4>
+                        <span class="price">R800/hour</span>
+                        <p>Flexible consulting hours</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Project-Based</h4>
+                        <span class="price">R15,000 - R50,000</span>
+                        <p>Complete project consultation</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Retainer Package</h4>
+                        <span class="price">R10,000/month</span>
+                        <p>Ongoing support & strategy</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service: Web Development -->
+            <article id="web-development" class="service-item">
+                <img src="images/web-development.png" alt="Web Development Icon" loading="lazy">
+                <h3>Web Development</h3>
+                <p>Modern, responsive websites and web applications that deliver exceptional user experiences across all devices.</p>
+                <ul>
+                    <li>Responsive web design</li>
+                    <li>E-commerce solutions</li>
+                    <li>Content management systems</li>
+                    <li>Progressive web apps</li>
+                </ul>
+                <div class="pricing">
+                    <div class="price-tier">
+                        <h4>Basic Website</h4>
+                        <span class="price">R8,000 - R15,000</span>
+                        <p>5-10 pages, responsive design</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Business Website</h4>
+                        <span class="price">R15,000 - R35,000</span>
+                        <p>Advanced features & CMS</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>E-commerce Platform</h4>
+                        <span class="price">R35,000+</span>
+                        <p>Full online store with payment</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service: Cloud Solutions -->
+            <article id="cloud-solutions" class="service-item">
+                <img src="images/cloud-solutions.png" alt="Cloud Solutions Icon" loading="lazy">
+                <h3>Cloud Solutions</h3>
+                <p>Scalable cloud infrastructure and migration services to reduce costs and improve reliability.</p>
+                <ul>
+                    <li>Cloud migration strategy</li>
+                    <li>Infrastructure setup</li>
+                    <li>Cost optimization</li>
+                    <li>Disaster recovery</li>
+                </ul>
+                <div class="pricing">
+                    <div class="price-tier">
+                        <h4>Cloud Setup</h4>
+                        <span class="price">R5,000 - R15,000</span>
+                        <p>Basic cloud infrastructure</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Migration Package</h4>
+                        <span class="price">R15,000 - R40,000</span>
+                        <p>Complete migration services</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Enterprise Cloud</h4>
+                        <span class="price">R40,000+</span>
+                        <p>Multi-cloud solutions</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service: Cybersecurity -->
+            <article id="cybersecurity" class="service-item">
+                <img src="images/cybersecurity.png" alt="Cybersecurity Icon" loading="lazy">
+                <h3>Cybersecurity Solutions</h3>
+                <p>Comprehensive security assessments and implementation to protect your business assets and data.</p>
+                <ul>
+                    <li>Security audits</li>
+                    <li>Vulnerability assessments</li>
+                    <li>Security policy development</li>
+                    <li>Incident response planning</li>
+                </ul>
+                <div class="pricing">
+                    <div class="price-tier">
+                        <h4>Security Audit</h4>
+                        <span class="price">R10,000 - R25,000</span>
+                        <p>Comprehensive security assessment</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Implementation</h4>
+                        <span class="price">R25,000 - R50,000</span>
+                        <p>Security measures deployment</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Managed Security</h4>
+                        <span class="price">R8,000/month</span>
+                        <p>Ongoing security management</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service: Data Analytics -->
+            <article id="data-analytics" class="service-item">
+                <img src="images/data-analytics.png" alt="Data Analytics Icon" loading="lazy">
+                <h3>Data Analytics & Business Intelligence</h3>
+                <p>Transform your data into actionable insights with powerful analytics and reporting solutions.</p>
+                <ul>
+                    <li>Data visualization</li>
+                    <li>Predictive analytics</li>
+                    <li>Business intelligence dashboards</li>
+                    <li>Performance reporting</li>
+                </ul>
+                <div class="pricing">
+                    <div class="price-tier">
+                        <h4>Basic Analytics</h4>
+                        <span class="price">R15,000 - R30,000</span>
+                        <p>Standard dashboards & reports</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Advanced Analytics</h4>
+                        <span class="price">R30,000 - R60,000</span>
+                        <p>Predictive modeling & AI</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Enterprise BI</h4>
+                        <span class="price">R60,000+</span>
+                        <p>Complete BI ecosystem</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service: UI/UX Design -->
+            <article id="ui-ux-design" class="service-item">
+                <img src="images/ui-ux-design.png" alt="UI/UX Design Icon" loading="lazy">
+                <h3>UI/UX Design Services</h3>
+                <p>Beautiful, intuitive designs that enhance user experience and drive engagement across all platforms.</p>
+                <ul>
+                    <li>User research & testing</li>
+                    <li>Wireframing & prototyping</li>
+                    <li>Visual design & branding</li>
+                    <li>Usability optimization</li>
+                </ul>
+                <div class="pricing">
+                    <div class="price-tier">
+                        <h4>Design Package</h4>
+                        <span class="price">R8,000 - R20,000</span>
+                        <p>Basic UI/UX design package</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Comprehensive Design</h4>
+                        <span class="price">R20,000 - R40,000</span>
+                        <p>Complete design system</p>
+                    </div>
+                    <div class="price-tier">
+                        <h4>Enterprise Design</h4>
+                        <span class="price">R40,000+</span>
+                        <p>Full-scale design solution</p>
+                    </div>
+                </div>
             </article>
         </div>
+
+        <section class="services-intro">
+            <h2>Custom Pricing Available</h2>
+            <p>All prices are starting points and may vary based on project complexity, scope, and specific requirements. Contact us for a detailed quote tailored to your needs.</p>
+            <p><strong>Payment Terms:</strong> 50% deposit to start, 50% on completion. Monthly retainer packages available for ongoing support.</p>
+        </section>
     </main>
 
     <!--This is the footer section--> 
