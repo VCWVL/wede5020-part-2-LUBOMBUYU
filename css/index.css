@@ -1,0 +1,39 @@
+/* Hero Banner */
+.hero-banner {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.hero-banner h1 {
+    font-size: 3.375rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.125rem;
+}
+
+.hero-banner p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2.25rem;
+    color: var(--secondary-dark);
+}
+
+.cta-btn {
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-size: 1.375rem;
+    padding: 1.125rem 2.5rem;
+    border-radius: 1px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0, 87, 163, 0.12);
+    transition: background 0.2s, color 0.2s;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
