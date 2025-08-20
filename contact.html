@@ -6,57 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFlow Solutions</title>
     <meta name="description" content="TechFlow Solutions empowers your business through Custom Software, Mobile Apps, and IT Consulting. Future-proof your digital presence.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <script src="js/head.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/address.js"></script>   
-    <script src="js/footer.js"></script>
-    <script src="js/top.js"></script>
+    <link rel="stylesheet" href="css/styles.css">      <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/contact.css">   <!-- Contact Page Stylesheet -->   
+    <script src="js/head.js"></script>  <!-- Head Script for common functionalities -->
+    <script src="js/navigation.js"></script>    <!-- Navigation Script -->
+    <script src="js/address.js"></script>       <!-- Address Script -->
+    <script src="js/footer.js"></script>    <!-- Footer Script -->
+    <script src="js/top.js"></script>   <!-- Scroll to Top Script -->
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- ================= Header Section ================= -->
     <header class="header">
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy">
+                <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy"> <!-- Logo Image -->
             </a>
         </div>
 
-        <nav class="nav-links" aria-label="Main Navigation"></nav>
+        <nav class="nav-links" aria-label="Main Navigation"></nav> <!-- Navigation Menu -->
 
         <address class="contact-info"></address>
     </header>
 
-    <!-- Contact Section -->
-    <section class="contact">
+    <!-- ================= Contact Section ================= -->
+    <section class="contact" id="contact">
         <h1>Contact Us</h1>
         <p>Ready to start your next project or have a question? Reach out to our team and we’ll get back to you soon.</p>
         <address>
-            <p><strong>Phone:</strong> <a href="tel:+27123456799">+27 12 345 6799</a></p>
-            <p><strong>Email:</strong> <a href="mailto:info@techflow.co.za">info@techflow.co.za</a></p>
-            <p><strong>Location:</strong> Pretoria, South Africa</p>
+            <p><strong>Phone:</strong> <a href="tel:+27123456799">+27 12 345 6799</a></p> <!-- Phone Number -->
+            <p><strong>Email:</strong> <a href="mailto:info@techflow.co.za">info@techflow.co.za</a></p> <!-- Email Address -->
+            <p><strong>Location:</strong> Pretoria, South Africa</p> <!-- Physical Address -->
         </address>
-        <form action="#" method="post" autocomplete="off" aria-label="Contact form">
+        <form action="#" method="post" autocomplete="off" aria-label="Contact form"> <!-- Contact Form -->
             <div class="form-group">
                 <label for="name">Full Name<span aria-hidden="true">*</span></label>
-                <input type="text" id="name" name="name" required placeholder="Your full name">
+                <input type="text" id="name" name="name" required placeholder="Your full name"> <!-- Name Input -->
             </div>
             <div class="form-group">
                 <label for="email">Email Address<span aria-hidden="true">*</span></label>
-                <input type="email" id="email" name="email" required placeholder="you@email.com">
+                <input type="email" id="email" name="email" required placeholder="you@email.com"> <!-- Email Input -->
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Optional">
+                <input type="tel" id="phone" name="phone" placeholder="Optional"> <!-- Phone Input -->
             </div>
             <div class="form-group">
                 <label for="subject">Subject<span aria-hidden="true"></span></label>
-                <input type="text" id="subject" name="subject" required placeholder="How can we help you?">
+                <input type="text" id="subject" name="subject" required placeholder="How can we help you?"> <!-- Subject Input -->
             </div>
             <div class="form-group">
-                <label for="referral">How did you hear about us?</label>
+                <label for="referral">How did you hear about us?</label> <!-- Referral Input -->
                 <select id="referral" name="referral">
                     <option value="">Select an option</option>
                     <option value="google">Google Search</option>
@@ -70,12 +70,12 @@
                 <label for="message"><span aria-hidden="true">*</span></label>
                 <textarea id="message" name="message" rows="5" required placeholder="Type your message here"></textarea>
             </div>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+            <button type="submit" class="btn-primary">Send Message</button> <!-- Submit Button -->
     </section>
 
-    <section class="map">
-        <h2>Find Us Here</h2>
+    <!-- ================= Map Section ================= -->
+    <section class="map"> 
+        <h2>Find Us Here</h2>  <!-- Google Maps Embed Code -->
         <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1253505835507!2d30.895508876222554!3d-30.033261474929237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7ad54608d6929%3A0x1cb46da3c87914b9!2sGalleria%20Mall!5e0!3m2!1sen!2sza!4v1754991007177!5m2!1sen!2sza"
             class="contact-iframe"
@@ -85,8 +85,9 @@
         </iframe>
     </section>
 
+    <!-- ================= Second Map Section ================= -->
     <section class="map">
-    <h2>And Here</h2>
+    <h2>And Here</h2>  <!-- Second Google Maps Embed Code -->
     <iframe 
      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28649.570506596254!2d28.0209666964707!3d-26.15773528735435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c8d37b50aaf%3A0x14ea91e5828c79e9!2sRosebank%20Mall!5e0!3m2!1sen!2sza!4v1755697866611!5m2!1sen!2sza"  
      class="contact-iframe"
@@ -96,11 +97,8 @@
     </iframe>
     </section>
     
-    <!--This is the footer section--> 
+    <!-- ================= Footer Section ================= -->
     <footer class="footer"></footer>
-    <script src="js/navigation.js"></script>
-    <script src="js/address.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/top.js"></script>
+    
 </body>
 </html>
