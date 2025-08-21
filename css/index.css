@@ -112,7 +112,7 @@ h1, h2, h3 {
 }
 
 .learn-more {
-    color: #3498db;
+    color: white;
     
     text-decoration: none;
     font-weight: bold;
@@ -123,7 +123,7 @@ h1, h2, h3 {
 
 .learn-more:hover {
     text-decoration: underline;
-    color: #2980b9;
+    color: #f0f0f0;
 }
 
 .services-cta {
