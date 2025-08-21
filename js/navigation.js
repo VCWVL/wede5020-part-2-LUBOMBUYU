@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="services.html" class="nav-link">Services</a></li>
             <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="enquiry.html" class="nav-link">Enquiry</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     `;

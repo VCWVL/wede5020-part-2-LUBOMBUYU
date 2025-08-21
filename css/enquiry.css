@@ -1,0 +1,276 @@
+/* ================= Enquiry Page Styles ================= */
+
+/* Enquiry Form Section */
+.contact {
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #0057a3;
+    font-size: 2.75rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact > p {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #222;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Form Styles */
+.google-form {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 87, 163, 0.12);
+    border: 1px solid rgba(0, 87, 163, 0.08);
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #222;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-group label span[aria-hidden="true"] {
+    color: #ffb400;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #e1e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    background: #fafbfc;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0057a3;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 87, 163, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+    line-height: 1.5;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #8a9ba8;
+    font-style: italic;
+}
+
+/* Submit Button */
+.btn-primary {
+    background: linear-gradient(135deg, #0057a3, #004a8b);
+    color: white;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 16px rgba(0, 87, 163, 0.2);
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #004a8b, #0057a3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 87, 163, 0.3);
+}
+
+.btn-primary:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btn-primary:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Form Status Messages */
+.form-status {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-status p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.form-status.hidden {
+    display: none;
+}
+
+.form-status.success {
+    background: rgba(39, 174, 96, 0.1);
+    border: 1px solid rgba(39, 174, 96, 0.3);
+}
+
+.form-status.success p {
+    color: #27ae60;
+}
+
+.form-status.error {
+    background: rgba(231, 76, 60, 0.1);
+    border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+.form-status.error p {
+    color: #e74c3c;
+}
+
+/* Contact Actions */
+.contact-actions {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: #92bce4;
+    color: #222;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 87, 163, 0.1);
+}
+
+.btn-secondary:hover {
+    background: #2a4d69;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Enhanced Form Elements */
+.form-group select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: 40px;
+    appearance: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 20px;
+    }
+    
+    .contact h1 {
+        font-size: 2.25rem;
+    }
+    
+    .contact > p {
+        font-size: 1.1rem;
+    }
+    
+    .google-form {
+        padding: 30px;
+        margin: 0 10px;
+    }
+    
+    .form-group {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 40px 15px;
+    }
+    
+    .google-form {
+        padding: 25px 20px;
+        margin: 0 5px;
+    }
+    
+    .contact h1 {
+        font-size: 2rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+/* Additional Enhancements */
+.form-group:hover .form-group input,
+.form-group:hover .form-group select,
+.form-group:hover .form-group textarea {
+    border-color: #c1d3e6;
+}
+
+/* Focus states for better accessibility */
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 2px solid #0057a3;
+    outline-offset: 2px;
+}
+
+/* Loading state for submit button */
+.btn-primary.loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}

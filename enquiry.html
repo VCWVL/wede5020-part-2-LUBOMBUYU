@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form - TechFlow Solutions</title>
+    <meta name="description" content="Submit your enquiry to TechFlow Solutions for custom software development, mobile apps, and IT consulting services.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/enquiry.css">
+    <script src="js/head.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/top.js"></script>
+</head>
+<body>
+    <!-- ================= Header Section ================= -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy">
+            </a>
+        </div>
+        <nav class="nav-links" aria-label="Main Navigation"></nav>
+        <address class="contact-info"></address>
+    </header>
+
+    <!-- ================= Enquiry Form Section ================= -->
+    <section class="contact" id="enquiry">
+        <h1>Submit Your Enquiry</h1>
+        <p>Please fill out the form below and we'll get back to you within 24 hours.</p>
+        
+        <form id="enquiryForm" class="google-form" autocomplete="off" aria-label="Enquiry form">
+            <div class="form-group">
+                <label for="name">Full Name<span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="YOUR_NAME_ENTRY_ID" required placeholder="Your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address<span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="YOUR_EMAIL_ENTRY_ID" required placeholder="you@email.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="YOUR_PHONE_ENTRY_ID" placeholder="Optional">
+            </div>
+            
+            <div class="form-group">
+                <label for="company">Company/Organization</label>
+                <input type="text" id="company" name="YOUR_COMPANY_ENTRY_ID" placeholder="Your company name">
+            </div>
+            
+            <div class="form-group">
+                <label for="service">Service Interested In<span aria-hidden="true">*</span></label>
+                <select id="service" name="YOUR_SERVICE_ENTRY_ID" required>
+                    <option value="">Select a service</option>
+                    <option value="Custom Software Development">Custom Software Development</option>
+                    <option value="Mobile App Solutions">Mobile App Solutions</option>
+                    <option value="IT Consulting">IT Consulting</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Cloud Solutions">Cloud Solutions</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Data Analytics & Business Intelligence">Data Analytics & Business Intelligence</option>
+                    <option value="UI/UX Design Services">UI/UX Design Services</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="YOUR_BUDGET_ENTRY_ID">
+                    <option value="">Select budget range</option>
+                    <option value="Under R10,000">Under R10,000</option>
+                    <option value="R10,000 - R50,000">R10,000 - R50,000</option>
+                    <option value="R50,000 - R100,000">R50,000 - R100,000</option>
+                    <option value="R100,000 - R500,000">R100,000 - R500,000</option>
+                    <option value="Over R500,000">Over R500,000</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="timeline">Project Timeline</label>
+                <select id="timeline" name="YOUR_TIMELINE_ENTRY_ID">
+                    <option value="">Select timeline</option>
+                    <option value="ASAP">ASAP</option>
+                    <option value="1-2 months">1-2 months</option>
+                    <option value="3-6 months">3-6 months</option>
+                    <option value="6-12 months">6-12 months</option>
+                    <option value="Over 1 year">Over 1 year</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Project Details<span aria-hidden="true">*</span></label>
+                <textarea id="message" name="YOUR_MESSAGE_ENTRY_ID" rows="5" required placeholder="Please describe your project requirements, goals, and any specific features you need..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="referral">How did you hear about us?</label>
+                <select id="referral" name="YOUR_REFERRAL_ENTRY_ID">
+                    <option value="">Select an option</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Friend/Colleague">Friend/Colleague</option>
+                    <option value="Event/Conference">Event/Conference</option>
+                    <option value="Advertisement">Advertisement</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn-primary">Submit Enquiry</button>
+            <div id="formStatus" class="form-status hidden"></div>
+        </form>
+    </section>
+
+    <!-- ================= Footer Section ================= -->
+    <footer class="footer"></footer>
+
+    <!-- ================= Google Sheets Integration Script ================= -->
+    <script>
+        // Pre-select service from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceFromUrl = urlParams.get('service');
+        const serviceSelect = document.getElementById('service');
+
+        if (serviceFromUrl && serviceSelect) {
+            // Check if an option with this value exists
+            const optionExists = Array.from(serviceSelect.options).some(option => option.value === serviceFromUrl);
+            if (optionExists) {
+                serviceSelect.value = serviceFromUrl;
+            }
+        }
+
+        // Replace with your actual Google Form URL
+        const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_UNIQUE_FORM_ID/formResponse';
+        
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const formData = new FormData(form);
+            const submitButton = form.querySelector('button[type="submit"]');
+            const statusDiv = document.getElementById('formStatus');
+            
+            // Disable submit button
+            submitButton.disabled = true;
+            submitButton.textContent = 'Submitting...';
+            
+            // Create URL with form data
+            const url = new URL(GOOGLE_FORM_URL);
+            const params = new URLSearchParams();
+            
+            // Add form data to URL parameters
+            for (let [key, value] of formData.entries()) {
+                if (value.trim()) {
+                    params.append(key, value);
+                }
+            }
+            
+            // Submit to Google Form
+            fetch(GOOGLE_FORM_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: params
+            })
+            .then(() => {
+                statusDiv.innerHTML = '<p>Thank you! Your enquiry has been submitted successfully. We will contact you within 24 hours.</p>';
+                statusDiv.className = 'form-status success';
+                form.reset();
+            })
+            .catch(error => {
+                statusDiv.innerHTML = '<p>Sorry, there was an error submitting your form. Please try again or contact us directly.</p>';
+                statusDiv.className = 'form-status error';
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit Enquiry';
+            });
+        });
+    </script>
+</body>
+</html>
