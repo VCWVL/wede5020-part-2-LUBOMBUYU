@@ -2,10 +2,10 @@
 
 ## Student Information
 
-*   **Name:** [Your Name]
-*   **Student ID:** [Your Student ID]
+*   **Name:** Lubo Mbuyu
+*   **Student ID:** ST10467547
 *   **Course:** WED5020
-*   **Institution:** [Your Institution Name]
+*   **Institution:** Varcity College Westville
 
 ## Project Overview
 
