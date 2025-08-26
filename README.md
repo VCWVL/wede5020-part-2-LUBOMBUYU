@@ -174,13 +174,13 @@ Set up project structure
 
 Added semantic HTML pages (index, about, services, portfolio, contact, enquiry, file-organization-plan)
 
-###v1.1.0 – Content Updates
+##v1.1.0 – Content Updates
 
 Added company overview and service descriptions
 
 Updated <h1> and section headings for consistency
 
-###v1.2.0 – Assets & Styles
+##v1.2.0 – Assets & Styles
 
 Linked external CSS stylesheet
 
@@ -188,7 +188,7 @@ Added initial layout styles (Flexbox + Grid)
 
 Uploaded images and icons (logo, service icons, wireframes, sitemap)
 
-###v1.3.0 – JavaScript Functionality
+##v1.3.0 – JavaScript Functionality
 
 Added dynamic navigation bar
 
