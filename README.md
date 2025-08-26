@@ -214,4 +214,10 @@ Unsplash. (2024). Royalty-Free Images. Retrieved from: https://unsplash.com/
 
 Google Fonts. (2024). Roboto and Montserrat Fonts. Retrieved from: https://fonts.google.com/
 
+📸 Content Sourcing
+
+Public Domain and Creative Commons Resources: Free images, icons, and fonts sourced from Unsplash, Freepik, and Google Fonts.
+
+Original Content: Text descriptions (company overview, services, portfolio examples) were researched and written by the student.
+
 
