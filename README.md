@@ -9,7 +9,9 @@
 
 ## Project Overview
 
-A comprehensive, responsive website for TechFlow Solutions - a fictional IT services company specializing in custom software development, mobile apps, IT consulting, web development, cloud solutions, and cybersecurity. This project serves as a practical application of front-end web development skills, focusing on creating a professional, user-friendly, and aesthetically pleasing online presence for a business.
+A comprehensive, responsive website for TechFlow Solutions – a fictional IT services company specializing in custom software development, mobile apps, IT consulting, web development, cloud solutions, and cybersecurity.
+
+This project demonstrates front-end web development skills, focusing on building a professional and user-friendly online presence for a business.
 
 ## Website Goals and Objectives
 
@@ -166,7 +168,33 @@ flowchart TD
 
 ## Changelog
 
-### v1.0.0 - (Submission Date for Part 1)
+###v1.0.0 – Initial Commit
+
+Set up project structure
+
+Added semantic HTML pages (index, about, services, portfolio, contact, enquiry, file-organization-plan)
+
+###v1.1.0 – Content Updates
+
+Added company overview and service descriptions
+
+Updated <h1> and section headings for consistency
+
+###v1.2.0 – Assets & Styles
+
+Linked external CSS stylesheet
+
+Added initial layout styles (Flexbox + Grid)
+
+Uploaded images and icons (logo, service icons, wireframes, sitemap)
+
+###v1.3.0 – JavaScript Functionality
+
+Added dynamic navigation bar
+
+Implemented back-to-top button
+
+Created services carousel### v1.0.0 - (Submission Date for Part 1)
 *   **Initial Commit:** Project setup and file structure created.
 *   **HTML:** All 7 HTML pages (`index`, `about`, `services`, `portfolio`, `contact`, `enquiry`, `file-organization-plan`) have been created with semantic markup.
 *   **CSS:** Modular CSS files created. Implemented global styles, responsive layouts using Flexbox and Grid, and page-specific styling.
@@ -176,9 +204,14 @@ flowchart TD
 
 ## References
 
-*(This section should be populated with all sources used, such as tutorials, code snippets, libraries, images, etc., using a recognized referencing style like Harvard or APA.)*
+W3Schools. (2023). CSS Flexbox. Retrieved from: https://www.w3schools.com/css/css3_flexbox.asp
 
-**Example:**
+Mozilla Developer Network. (2023). Using Fetch. Retrieved from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
-*   W3Schools. (2023). *CSS Flexbox*. Retrieved from https://www.w3schools.com/css/css3_flexbox.asp
-*   Mozilla Developer Network. (2023). *Using Fetch*. Retrieved from https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+Freepik. (2024). Icons and Vector Assets. Retrieved from: https://www.freepik.com/
+
+Unsplash. (2024). Royalty-Free Images. Retrieved from: https://unsplash.com/
+
+Google Fonts. (2024). Roboto and Montserrat Fonts. Retrieved from: https://fonts.google.com/
+
+
