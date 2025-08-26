@@ -178,7 +178,7 @@ v1.1.0 – Content Updates
 
 Added company overview and service descriptions
 
-Updated <h1> and section headings for consistency
+Updated h1 and section headings for consistency
 
 v1.2.0 – Assets & Styles
 
