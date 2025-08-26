@@ -168,7 +168,7 @@ flowchart TD
 
 ## Changelog
 
-###v1.0.0 – Initial Commit
+v1.0.0 – Initial Commit
 
 Set up project structure
 
