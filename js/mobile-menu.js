@@ -81,8 +81,8 @@ class MobileMenu {
     }
 
     populateSidebarNav() {
-        const mainNav = document.querySelector('nav.nav-links');
-        const sidebarNav = this.sidebar.querySelector('nav.nav-links');
+        const mainNav = document.getElementById('desktop-nav');
+        const sidebarNav = document.getElementById('mobile-nav');
 
         if (mainNav && sidebarNav) {
             // Copy the navigation content
