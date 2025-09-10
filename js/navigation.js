@@ -10,14 +10,30 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     `;
-    const nav = document.querySelector('nav.nav-links');
-    if (nav) {
-        nav.innerHTML = navHTML;
-        // Optionally, set active class based on current page
-        const links = nav.querySelectorAll('.nav-link');
+
+    // Populate main navigation
+    const mainNav = document.querySelector('nav.nav-links');
+    if (mainNav) {
+        mainNav.innerHTML = navHTML;
+        // Set active class based on current page
+        const links = mainNav.querySelectorAll('.nav-link');
         const current = window.location.pathname.split('/').pop();
         links.forEach(link => {
             if (link.getAttribute('href') === current) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Populate sidebar navigation (for mobile menu)
+    const sidebarNav = document.querySelector('#mobile-sidebar nav.nav-links');
+    if (sidebarNav) {
+        sidebarNav.innerHTML = navHTML;
+        // Set active class based on current page
+        const sidebarLinks = sidebarNav.querySelectorAll('.nav-link');
+        const currentPage = window.location.pathname.split('/').pop();
+        sidebarLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
                 link.classList.add('active');
             }
         });

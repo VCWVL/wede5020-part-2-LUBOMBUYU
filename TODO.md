@@ -3,9 +3,9 @@
 ## Part 2: Designing the Visuals: CSS Styling and Responsive Design
 
 ### 1. Working through Feedback from Part 1
-- [ ] Review any feedback from Part 1 submission
-- [ ] Implement corrections and changes based on feedback
-- [ ] Update changelog with feedback-related edits
+- [x] Review any feedback from Part 1 submission
+- [x] Implement corrections and changes based on feedback
+- [x] Update changelog with feedback-related edits
 
 ### 2. CSS Styling for Desktop Solution
 
@@ -49,11 +49,17 @@
 - [x] Ensure scalable and flexible layouts
 
 #### 3.3. Responsive Images
-- [ ] Implement srcset and sizes attributes
-- [ ] Use responsive image techniques
-- [ ] Optimize images for different screen densities
+- [x] Implement srcset and sizes attributes
+- [x] Use responsive image techniques
+- [x] Optimize images for different screen densities
 
-#### 3.4. Test and Iterate
+#### 3.4. Mobile Navigation
+- [x] Implement hamburger menu for mobile devices
+- [x] Create slide-in sidebar navigation
+- [x] Add overlay and smooth animations
+- [x] Apply to all HTML pages (index, about, services, portfolio, contact, enquiry)
+
+#### 3.5. Test and Iterate
 - [ ] Test on different devices and browsers
 - [ ] Use browser developer tools for debugging
 - [ ] Document responsive behavior in README
@@ -91,10 +97,10 @@
 - [x] Implement success/error message styling
 
 ### 5. Accessibility and Performance
-- [ ] Ensure sufficient color contrast
-- [ ] Add focus indicators for keyboard navigation
-- [ ] Optimize CSS for performance (minimize, compress)
-- [ ] Test with screen readers
+- [x] Ensure sufficient color contrast
+- [x] Add focus indicators for keyboard navigation
+- [x] Optimize CSS for performance (minimize, compress)
+- [x] Test with screen readers
 
 ### 6. GitHub Repository Updates
 - [ ] Commit changes regularly with descriptive messages

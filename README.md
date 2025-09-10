@@ -54,19 +54,160 @@ The primary goal is to design and develop a fully functional, responsive, and pr
     *   **Milestone 4:** Basic JavaScript for dynamic components (navigation, carousel).
     *   **Milestone 5:** Finalized content and assets for Part 1 submission.
 
-*   **Part 2: Advanced Interactivity and Refinement (Future)**
-    *   **Milestone 6:** Enhance JavaScript functionality and user interactions.
-    *   **Milestone 7:** Refine CSS, add animations and transitions.
-    *   **Milestone 8:** Conduct cross-browser and device testing.
+*   **Part 2: Designing the Visuals - CSS Styling and Responsive Design (Completed)**
+    *   **Milestone 6:** Enhanced CSS with comprehensive styling system using CSS variables.
+    *   **Milestone 7:** Implemented advanced responsive design with mobile-first approach.
+    *   **Milestone 8:** Added mobile sidebar navigation with hamburger menu.
+    *   **Milestone 9:** Applied visual enhancements, animations, and transitions.
+    *   **Milestone 10:** Conducted cross-browser and device testing.
+    *   **Milestone 11:** Updated documentation and prepared for Part 2 submission.
 
 *   **Part 3: Backend Integration and Deployment (Future)**
-    *   **Milestone 9:** Develop backend logic for form submissions.
-    *   **Milestone 10:** Integrate a database for portfolio and blog content.
-    *   **Milestone 11:** Final deployment to a live server.
+    *   **Milestone 12:** Develop backend logic for form submissions.
+    *   **Milestone 13:** Integrate a database for portfolio and blog content.
+    *   **Milestone 14:** Final deployment to a live server.
 
 ## Part 1 Details
 
 This section covers the technical implementation and structure for Part 1 of the project.
+
+## Part 2 Details: Designing the Visuals - CSS Styling and Responsive Design
+
+This section covers the advanced CSS styling, responsive design enhancements, and mobile navigation implementation for Part 2 of the project.
+
+### Enhanced CSS Architecture
+
+#### CSS Variables System
+- **Color Palette**: Comprehensive color scheme with primary, secondary, accent, and semantic colors
+- **Typography**: Consistent font families (Montserrat for headings, Roboto for body text)
+- **Spacing**: Standardized spacing scale using rem units
+- **Shadows**: Multiple shadow levels for depth and visual hierarchy
+- **Transitions**: Consistent transition timing and easing functions
+
+#### Advanced Responsive Design
+- **Mobile-First Approach**: Base styles for mobile, enhanced for larger screens
+- **Breakpoint Strategy**: Desktop (>1024px), Tablet (768-1024px), Mobile (<768px)
+- **Flexible Layouts**: CSS Grid and Flexbox for complex responsive layouts
+- **Relative Units**: em/rem for scalable typography and spacing
+
+### Mobile Navigation System
+
+#### Hamburger Menu Implementation
+- **Hamburger Icon**: Three-line menu that transforms to X when active
+- **Smooth Animations**: CSS transitions for icon transformation
+- **Accessibility**: Proper ARIA labels and keyboard navigation support
+
+#### Sidebar Navigation
+- **Slide-in Animation**: Sidebar slides from left with smooth CSS transitions
+- **Overlay Background**: Dark overlay covers content when sidebar is open
+- **Auto-close Functionality**: Closes on overlay click, navigation link click, or escape key
+- **Body Scroll Prevention**: Prevents background scrolling when sidebar is open
+
+#### Cross-Page Consistency
+- **Applied to All Pages**: Consistent mobile navigation across all HTML files
+- **Responsive Behavior**: Only shows on mobile devices (≤767px)
+- **Desktop Fallback**: Desktop navigation remains unchanged
+
+### Visual Enhancements
+
+#### Interactive Elements
+- **Hover States**: Enhanced hover effects for buttons, links, and cards
+- **Focus Indicators**: Clear focus states for keyboard navigation
+- **Button Animations**: Subtle lift effects and color transitions
+- **Card Hover Effects**: Shadow and transform effects for service/portfolio cards
+
+#### Typography Hierarchy
+- **Font Scale**: Consistent heading sizes (h1-h6) with proper line heights
+- **Text Contrast**: High contrast ratios for accessibility compliance
+- **Letter Spacing**: Optimized spacing for readability
+
+#### Layout Improvements
+- **Container System**: Max-width containers with responsive padding
+- **Grid Systems**: Flexible grid layouts for content organization
+- **Spacing Consistency**: Standardized margins and padding throughout
+
+### Performance Optimizations
+
+#### CSS Organization
+- **Modular Structure**: Separate files for global and page-specific styles
+- **CSS Variables**: Efficient color and value management
+- **Minified Delivery**: Optimized CSS for production
+
+#### Responsive Images
+- **Lazy Loading**: Implemented lazy loading for performance
+- **Responsive Images**: Proper srcset and sizes attributes
+- **Optimized Assets**: Compressed images for faster loading
+
+### Accessibility Enhancements
+
+#### Keyboard Navigation
+- **Focus Management**: Clear focus indicators and logical tab order
+- **Skip Links**: Navigation shortcuts for screen readers
+- **ARIA Labels**: Proper labeling for assistive technologies
+
+#### Color Contrast
+- **WCAG Compliance**: AA level contrast ratios throughout
+- **Color Independence**: Design works without color reliance
+- **Text Alternatives**: Alt text for all images
+
+### Browser Compatibility
+
+#### Cross-Browser Testing
+- **Modern Browsers**: Chrome, Firefox, Safari, Edge
+- **CSS Fallbacks**: Graceful degradation for older browsers
+- **Vendor Prefixes**: Appropriate prefixes for CSS properties
+
+#### Device Testing
+- **Mobile Devices**: iOS Safari, Android Chrome
+- **Tablet Devices**: iPad, Android tablets
+- **Desktop Resolutions**: Various screen sizes and aspect ratios
+
+### Technical Implementation Details
+
+#### CSS Grid and Flexbox Usage
+- **Complex Layouts**: Grid for main page structures
+- **Component Layouts**: Flexbox for navigation, cards, and forms
+- **Responsive Grids**: Auto-fit and minmax for flexible columns
+
+#### Animation and Transitions
+- **Performance**: Hardware-accelerated CSS transforms
+- **Timing**: Consistent easing curves and durations
+- **Purposeful Motion**: Meaningful animations that enhance UX
+
+#### Form Styling
+- **Input States**: Focus, hover, and validation states
+- **Consistent Design**: Unified form element styling
+- **Error Handling**: Visual feedback for form validation
+
+### Quality Assurance
+
+#### Testing Methodology
+- **Manual Testing**: Cross-device and cross-browser verification
+- **Responsive Testing**: Browser developer tools and real devices
+- **Accessibility Testing**: Screen reader and keyboard navigation testing
+
+#### Documentation Updates
+- **README Enhancement**: Comprehensive Part 2 documentation
+- **Changelog Maintenance**: Detailed version history
+- **Code Comments**: Well-documented CSS and JavaScript
+
+### Part 2 Deliverables
+
+#### Files Modified
+- **HTML Files**: Added mobile navigation elements to all pages
+- **CSS Files**: Enhanced styles.css with comprehensive styling system
+- **JavaScript Files**: Updated navigation.js with mobile menu functionality
+- **Documentation**: Updated README.md and TODO.md
+
+#### Key Features Delivered
+1. ✅ Comprehensive CSS Variables System
+2. ✅ Advanced Responsive Design Implementation
+3. ✅ Mobile Sidebar Navigation
+4. ✅ Enhanced Visual Design
+5. ✅ Accessibility Improvements
+6. ✅ Cross-Browser Compatibility
+7. ✅ Performance Optimizations
+8. ✅ Documentation Updates
 
 ### Project Structure
 
@@ -168,17 +309,33 @@ flowchart TD
 
 ## Changelog
 
-### v1.0.0 – Initial Commit
+### v2.0.0 - Part 2: Designing the Visuals (Submission Date for Part 2)
+*   **Enhanced CSS Architecture:** Implemented comprehensive CSS variables system with color palette, typography, spacing, and shadows.
+*   **Advanced Responsive Design:** Applied mobile-first approach with breakpoints for desktop (>1024px), tablet (768-1024px), and mobile (<768px).
+*   **Mobile Navigation System:** Added hamburger menu with slide-in sidebar navigation, overlay, and accessibility features.
+*   **Visual Enhancements:** Applied hover states, focus indicators, button animations, and card hover effects.
+*   **Typography Improvements:** Established consistent font hierarchy with Montserrat for headings and Roboto for body text.
+*   **Layout Refinements:** Enhanced container system, grid layouts, and spacing consistency across all pages.
+*   **Accessibility Updates:** Improved keyboard navigation, ARIA labels, and WCAG AA compliance.
+*   **Performance Optimizations:** Implemented lazy loading, responsive images, and optimized CSS delivery.
+*   **Cross-Browser Compatibility:** Tested and ensured compatibility with Chrome, Firefox, Safari, and Edge.
+*   **Documentation:** Updated README.md and TODO.md with comprehensive Part 2 details.
 
-Set up project structure
+### v1.0.0 - Part 1: Website Structure and Foundation (Submission Date for Part 1)
+*   **Initial Commit:** Project setup and file structure created.
+*   **HTML:** All 7 HTML pages (`index`, `about`, `services`, `portfolio`, `contact`, `enquiry`, `file-organization-plan`) have been created with semantic markup.
+*   **CSS:** Modular CSS files created. Implemented global styles, responsive layouts using Flexbox and Grid, and page-specific styling.
+*   **JavaScript:** Added scripts for dynamic navigation, footer, back-to-top button, and interactive elements like the services carousel.
+*   **Assets:** All necessary images, icons, and branding assets have been added and optimized.
+*   **Documentation:** `README.md` and `TODO.md` created.
 
-Added semantic HTML pages (index, about, services, portfolio, contact, enquiry, file-organization-plan)
+### v1.3.0 – JavaScript Functionality
 
-### v1.1.0 – Content Updates
+Added dynamic navigation bar
 
-Added company overview and service descriptions
+Implemented back-to-top button
 
-Updated h1 and section headings for consistency
+Created services carousel
 
 ### v1.2.0 – Assets & Styles
 
@@ -188,19 +345,17 @@ Added initial layout styles (Flexbox + Grid)
 
 Uploaded images and icons (logo, service icons, wireframes, sitemap)
 
-### v1.3.0 – JavaScript Functionality
+### v1.1.0 – Content Updates
 
-Added dynamic navigation bar
+Added company overview and service descriptions
 
-Implemented back-to-top button
+Updated h1 and section headings for consistency
 
-Created services carousel### v1.0.0 - (Submission Date for Part 1)
-*   **Initial Commit:** Project setup and file structure created.
-*   **HTML:** All 7 HTML pages (`index`, `about`, `services`, `portfolio`, `contact`, `enquiry`, `file-organization-plan`) have been created with semantic markup.
-*   **CSS:** Modular CSS files created. Implemented global styles, responsive layouts using Flexbox and Grid, and page-specific styling.
-*   **JavaScript:** Added scripts for dynamic navigation, footer, back-to-top button, and interactive elements like the services carousel.
-*   **Assets:** All necessary images, icons, and branding assets have been added and optimized.
-*   **Documentation:** `README.md` and `TODO.md` created.
+### v1.0.0 – Initial Commit
+
+Set up project structure
+
+Added semantic HTML pages (index, about, services, portfolio, contact, enquiry, file-organization-plan)
 
 ## References
 
