@@ -8,13 +8,15 @@ class MobileMenu {
         this.hamburger = document.querySelector('.nav-toggle');
         this.sidebar = document.getElementById('mobile-sidebar');
         this.overlay = document.getElementById('sidebar-overlay');
+        this.desktopNav = document.getElementById('desktop-nav');
+        this.mobileNav = document.getElementById('mobile-nav');
         this.isOpen = false;
 
         this.init();
     }
 
     init() {
-        if (!this.hamburger || !this.sidebar || !this.overlay) {
+        if (!this.hamburger || !this.sidebar || !this.overlay || !this.desktopNav || !this.mobileNav) {
             console.warn('Mobile menu elements not found');
             return;
         }
@@ -24,8 +26,10 @@ class MobileMenu {
         this.overlay.addEventListener('click', () => this.closeMenu());
         document.addEventListener('keydown', (e) => this.handleKeydown(e));
 
-        // Close menu on window resize if desktop size
+        // Responsive menu limiter
+        this.handleResponsiveMenu();
         window.addEventListener('resize', () => {
+            this.handleResponsiveMenu();
             if (window.innerWidth > 767 && this.isOpen) {
                 this.closeMenu();
             }
@@ -36,6 +40,25 @@ class MobileMenu {
         navLinks.forEach(link => {
             link.addEventListener('click', () => this.closeMenu());
         });
+    }
+
+    handleResponsiveMenu() {
+        if (window.innerWidth <= 767) {
+            // Show hamburger and mobile sidebar, hide desktop nav
+            this.hamburger.style.display = 'block';
+            this.sidebar.style.display = 'block';
+            this.overlay.style.display = 'block';
+            this.desktopNav.style.display = 'none';
+
+            // Populate mobile sidebar with desktop nav links
+            this.populateSidebarNav();
+        } else {
+            // Hide hamburger and mobile sidebar, show desktop nav
+            this.hamburger.style.display = 'none';
+            this.sidebar.style.display = 'none';
+            this.overlay.style.display = 'none';
+            this.desktopNav.style.display = 'block';
+        }
     }
 
     toggleMenu() {
@@ -81,21 +104,15 @@ class MobileMenu {
     }
 
     populateSidebarNav() {
-        const mainNav = document.getElementById('desktop-nav');
-        const sidebarNav = document.getElementById('mobile-nav');
-
-        if (mainNav && sidebarNav) {
-            // Copy the navigation content
-            sidebarNav.innerHTML = mainNav.innerHTML;
+        // Copy desktop nav links to mobile nav
+        if (this.desktopNav && this.mobileNav) {
+            this.mobileNav.innerHTML = this.desktopNav.innerHTML;
 
             // Re-attach click listeners to sidebar links
-            const sidebarLinks = sidebarNav.querySelectorAll('.nav-link');
+            const sidebarLinks = this.mobileNav.querySelectorAll('.nav-link');
             sidebarLinks.forEach(link => {
                 link.addEventListener('click', () => this.closeMenu());
             });
-        } else {
-            // If main nav isn't ready yet, try again after a short delay
-            setTimeout(() => this.populateSidebarNav(), 100);
         }
     }
 }

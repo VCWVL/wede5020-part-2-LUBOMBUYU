@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechFlow Solutions</title>
-    <meta name="description" content="TechFlow Solutions empowers your business through Custom Software, Mobile Apps, and IT Consulting. Future-proof your digital presence.">
-    <link rel="stylesheet" href="css/styles.css">      <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/contact.css">   <!-- Contact Page Stylesheet -->   
-    <script src="js/head.js"></script>  <!-- Head Script for common functionalities -->
-    <script src="js/navigation.js"></script>    <!-- Navigation Script -->
-    <script src="js/address.js"></script>       <!-- Address Script -->
-    <script src="js/footer.js"></script>    <!-- Footer Script -->
-    <script src="js/top.js"></script>   <!-- Scroll to Top Script -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TechFlow Solutions</title>
+        <meta name="description" content="TechFlow Solutions empowers your business through Custom Software, Mobile Apps, and IT Consulting. Future-proof your digital presence.">
+        <link rel="stylesheet" href="css/styles.css">      <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/header.css"> <!-- Header Stylesheet -->
+        <link rel="stylesheet" href="css/footer.css"> <!-- Footer Stylesheet -->
+        <link rel="stylesheet" href="css/utilities.css"> <!-- Utilities Stylesheet -->
+        <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="css/special.css"> <!-- Special Stylesheet -->
+        <link rel="stylesheet" href="css/contact.css">   <!-- Contact Page Stylesheet -->   
+        <script src="js/head.js"></script>  <!-- Head Script for common functionalities -->
+        <script src="js/navigation.js"></script>    <!-- Navigation Script -->
+        <script src="js/address.js"></script>       <!-- Address Script -->
+        <script src="js/footer.js"></script>    <!-- Footer Script -->
+        <script src="js/top.js"></script>   <!-- Scroll to Top Script -->
+        <script src="js/mobile-menu.js"></script> <!-- Mobile Menu Script -->
+    </head>
 
 <body>
     <!-- ================= Header Section ================= -->
@@ -27,10 +33,37 @@
             </a>
         </div>
 
-        <nav class="nav-links" aria-label="Main Navigation"></nav> <!-- Navigation Menu -->
+<nav id="desktop-nav" class="nav-links" aria-label="Main Navigation">
+    <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li><a class="nav-link" href="enquiry.html">Enquiry</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+</nav> <!-- Navigation Menu -->
+
+        <!-- Hamburger Menu Button -->
+        <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
         <address class="contact-info"></address>
     </header>
+
+    <!-- Mobile Sidebar Menu -->
+    <aside class="sidebar" id="mobile-sidebar">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy">
+        </div>
+        <nav id="mobile-nav" class="nav-links" aria-label="Mobile Navigation"></nav>
+    </aside>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
     <!-- ================= Contact Section ================= -->
     <section class="contact" id="contact">
@@ -75,6 +108,9 @@
     
     <!-- ================= Footer Section ================= -->
     <footer class="footer"></footer>
-    
+
+    <!-- Scripts -->
+    <script src="js/mobile-menu.js"></script>
+
 </body>
 </html>

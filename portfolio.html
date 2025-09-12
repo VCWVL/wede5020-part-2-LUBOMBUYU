@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechFlow Solutions</title>
-    <meta name="description" content="TechFlow Solutions empowers your business through Custom Software, Mobile Apps, and IT Consulting. Future-proof your digital presence.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <script src="js/navigation.js"></script> <!-- Navigation Script -->
-    <script src="js/address.js"></script> <!-- Address Script -->
-    <script src="js/footer.js"></script> <!-- Footer Script -->
-    <script src="js/top.js"></script> <!-- Scroll to Top Script -->
-    <script src="js/head.js"></script>  <!-- Head Script for common functionalities -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TechFlow Solutions</title>
+        <meta name="description" content="TechFlow Solutions empowers your business through Custom Software, Mobile Apps, and IT Consulting. Future-proof your digital presence.">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/utilities.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/special.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <script src="js/navigation.js"></script> <!-- Navigation Script -->
+        <script src="js/address.js"></script> <!-- Address Script -->
+        <script src="js/footer.js"></script> <!-- Footer Script -->
+        <script src="js/top.js"></script> <!-- Scroll to Top Script -->
+        <script src="js/head.js"></script>  <!-- Head Script for common functionalities -->
+        <script src="js/mobile-menu.js"></script> <!-- Mobile Menu Script -->
+    </head>
 
 <body>
     <!-- ================= Header Section ================= -->
@@ -24,25 +30,25 @@
             </a>
         </div>
 
-        <nav class="nav-links" aria-label="Main Navigation"></nav> <!-- Navigation Menu -->
+        <nav id="desktop-nav" class="nav-links" aria-label="Main Navigation"></nav> <!-- Navigation Menu -->
 
-        <!-- Hamburger Menu Button - COMMENTED OUT -->
-        <!-- <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </button> -->
+        </button>
 
         <address class="contact-info"></address> <!-- Contact Information -->
     </header>
 
-    <!-- Mobile Sidebar - COMMENTED OUT -->
-    <!-- <aside class="sidebar" id="mobile-sidebar">
-        <nav class="nav-links" aria-label="Mobile Navigation"></nav>
-    </aside> -->
+    <aside class="sidebar" id="mobile-sidebar">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy">
+        </div>
+        <nav id="mobile-nav" class="nav-links" aria-label="Mobile Navigation"></nav>
+    </aside>
 
-    <!-- Sidebar Overlay - COMMENTED OUT -->
-    <!-- <div class="sidebar-overlay" id="sidebar-overlay"></div> -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
     <!-- ================= Portfolio Section ================= -->
     <main class="portfolio" id="portfolio">
@@ -146,7 +152,7 @@
     <footer class="footer"></footer>
 
     <!-- Scripts are loaded at the end of the body for better performance -->
-    <!-- <script src="js/mobile-menu.js"></script> -->
+    <script src="js/mobile-menu.js"></script>
 
 </body>
 

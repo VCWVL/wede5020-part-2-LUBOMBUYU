@@ -1,0 +1,231 @@
+/* Header */
+.header {
+    background: var(--bg-white);
+    box-shadow: var(--shadow-medium);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    border-bottom: 3px solid var(--accent-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 10rem;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    transition: var(--transition-fast);
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation */
+.nav-links {
+    flex: 1 1 0;
+    display: none;
+    justify-content: center;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-family: var(--font-main);
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition-fast);
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--primary-hover);
+    text-decoration: underline;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-light);
+}
+
+.nav-link.active {
+    background: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Mobile Navigation Toggle */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Hamburger menu icon bars */
+.nav-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Sidebar menu for mobile */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: var(--primary-color);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    transition: left 0.3s ease;
+    z-index: 1100;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Added to enable scrolling if content overflows */
+}
+
+/* Fix sidebar display on desktop inspect mode */
+@media (min-width: 1024px) {
+    .sidebar {
+        display: none !important;
+    }
+    .sidebar-overlay {
+        display: none !important;
+    }
+}
+
+/* Show hamburger and sidebar only on mobile and tablet */
+@media (max-width: 1023px) {
+    .nav-toggle {
+        display: block;
+    }
+    .sidebar {
+        display: flex;
+    }
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* Sidebar navigation links */
+.sidebar .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+    list-style-type: disc; /* Add bullet points */
+    margin-left: 1rem; /* Indent list */
+}
+
+.sidebar .nav-links ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.sidebar .logo img {
+    width: 4rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.sidebar .nav-link {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0;
+    color: var(--text-light);
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link:focus {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Overlay to cover content when sidebar is open */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1050;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Desktop navigation: show on desktop, hide on mobile */
+@media (min-width: 768px) {
+    #desktop-nav {
+        display: flex;
+    }
+    .nav-toggle,
+    #mobile-sidebar,
+    #sidebar-overlay {
+        display: none;
+    }
+}
+
+/* Mobile navigation: show hamburger and sidebar on mobile, hide desktop nav */
+@media (max-width: 1023px) {
+    .contact-info {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #desktop-nav {
+        display: none;
+    }
+    .nav-toggle,
+    #mobile-sidebar,
+    #sidebar-overlay {
+        display: block;
+    }
+}

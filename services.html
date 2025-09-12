@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechFlow Solutions - Services & Pricing</title>
-    <meta name="description" content="TechFlow Solutions empowers your business through Custom Software, Mobile Apps, and IT Consulting. Future-proof your digital presence.">
-    <link rel="stylesheet" href="css/styles.css"> <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/services.css"> <!-- Services Stylesheet -->
-    <script src="js/head.js"></script> <!-- Head Script for common functionalities -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TechFlow Solutions - Services & Pricing</title>
+        <meta name="description" content="TechFlow Solutions empowers your business through Custom Software, Mobile Apps, and IT Consulting. Future-proof your digital presence.">
+        <link rel="stylesheet" href="css/styles.css"> <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/header.css"> <!-- Header Stylesheet -->
+        <link rel="stylesheet" href="css/footer.css"> <!-- Footer Stylesheet -->
+        <link rel="stylesheet" href="css/utilities.css"> <!-- Utilities Stylesheet -->
+        <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="css/special.css"> <!-- Special Stylesheet -->
+        <link rel="stylesheet" href="css/services.css"> <!-- Services Stylesheet -->
+        <script src="js/head.js"></script> <!-- Head Script for common functionalities -->
+        <script src="js/mobile-menu.js"></script> <!-- Mobile Menu Script -->
+    </head>
 
 <body>
     <!-- Header -->
@@ -20,25 +26,25 @@
             </a>
         </div>
 
-        <nav class="nav-links" aria-label="Main Navigation"></nav>  <!-- Navigation Menu -->
+        <nav id="desktop-nav" class="nav-links" aria-label="Main Navigation"></nav> <!-- Navigation Menu -->
 
-        <!-- Hamburger Menu Button - COMMENTED OUT -->
-        <!-- <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </button> -->
+        </button>
 
         <address class="contact-info"></address> <!-- Contact Information -->
     </header>
 
-    <!-- Mobile Sidebar - COMMENTED OUT -->
-    <!-- <aside class="sidebar" id="mobile-sidebar">
-        <nav class="nav-links" aria-label="Mobile Navigation"></nav>
-    </aside> -->
+    <aside class="sidebar" id="mobile-sidebar">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy">
+        </div>
+        <nav id="mobile-nav" class="nav-links" aria-label="Mobile Navigation"></nav>
+    </aside>
 
-    <!-- Sidebar Overlay - COMMENTED OUT -->
-    <!-- <div class="sidebar-overlay" id="sidebar-overlay"></div> -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
     <!-- Services Section --> 
     <main class="services">

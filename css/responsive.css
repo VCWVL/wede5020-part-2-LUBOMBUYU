@@ -1,0 +1,366 @@
+/* Responsive Design with Conditional Media Queries */
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Styles - Landscape */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .header {
+        padding: 1.25rem 2rem;
+    }
+
+    .logo img {
+        width: 7rem;
+    }
+
+    .nav-links ul {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.625rem 1rem;
+    }
+
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Styles - Portrait */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .header {
+        padding: 1rem 1.5rem;
+    }
+
+    .logo img {
+        width: 6.5rem;
+    }
+
+    .nav-links ul {
+        gap: 0.75rem;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.875rem;
+    }
+
+    h1 { font-size: 2.125rem; }
+    h2 { font-size: 1.625rem; }
+    h3 { font-size: 1.375rem; }
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Mobile Styles - Large */
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo img {
+        width: 6rem;
+    }
+
+    /* Hide desktop navigation on mobile */
+    .nav-links {
+        display: none;
+    }
+
+    /* Show hamburger menu on mobile */
+    .nav-toggle {
+        display: block;
+        order: 2;
+    }
+
+    /* Hamburger animation */
+    .nav-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .nav-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Typography scaling for mobile */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    h4 { font-size: 1.125rem; }
+    h5 { font-size: 1rem; }
+    h6 { font-size: 0.875rem; }
+
+    body {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
+
+    /* Services responsive */
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Portfolio responsive */
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+
+    /* Contact responsive */
+    .contact {
+        max-width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .contact form {
+        padding: 1.5rem 1rem;
+    }
+
+    /* Map responsive */
+    .map {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 1.5rem auto;
+    }
+
+    .map iframe {
+        height: 250px;
+    }
+
+    .contact-iframe {
+        height: 250px;
+    }
+
+    /* Footer responsive */
+    .footer {
+        padding: 1.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .footer-content {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .social-media {
+        gap: 1rem;
+    }
+
+    .social-media a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-media img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-info p {
+        font-size: 0.9rem;
+    }
+
+    .footer-info p:first-child {
+        font-size: 1rem;
+    }
+
+    .footer-info p:last-child {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile Styles - Small */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    .header {
+        padding: 0.75rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .logo img {
+        width: 5rem;
+    }
+
+    .nav-toggle {
+        align-self: flex-end;
+    }
+
+    .nav-link {
+        padding: 0.625rem 0.75rem;
+        font-size: 1rem;
+    }
+
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.375rem; }
+    h3 { font-size: 1.125rem; }
+
+    .btn {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.875rem;
+    }
+
+    /* Enhanced mobile responsiveness */
+    .services-container {
+        gap: 1rem;
+    }
+
+    .service-item {
+        padding: 1.25rem;
+    }
+
+    .portfolio-container {
+        gap: 1rem;
+    }
+
+    .portfolio-item {
+        margin: 0 0 1rem 0;
+    }
+
+    /* Contact form adjustments */
+    .contact {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .contact form {
+        padding: 1.25rem 0.75rem;
+    }
+
+    /* Map adjustments */
+    .map {
+        padding: 0.75rem;
+        margin: 1rem auto;
+    }
+
+    .map iframe,
+    .contact-iframe {
+        height: 200px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 1.25rem 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    .footer-content {
+        gap: 0.75rem;
+    }
+
+    .social-media {
+        gap: 0.75rem;
+    }
+
+    .social-media a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-media img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-info p {
+        font-size: 0.85rem;
+    }
+
+    .footer-info p:first-child {
+        font-size: 0.95rem;
+    }
+
+    .footer-info p:last-child {
+        font-size: 0.75rem;
+    }
+}
+
+/* High-resolution displays */
+@media (min-resolution: 2dppx) {
+    .logo img,
+    .social-media img {
+        image-rendering: -webkit-optimize-contrast;
+        
+    }
+}

@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry Form - TechFlow Solutions</title>
-    <meta name="description" content="Submit your enquiry to TechFlow Solutions for custom software development, mobile apps, and IT consulting services.">
-    <link rel="stylesheet" href="css/styles.css"> <!-- Main style -->
-    <link rel="stylesheet" href="css/enquiry.css">  <!-- Enquiry form specific styles -->
-    <script src="js/head.js"></script> <!-- Head scripts -->
-    <script src="js/navigation.js"></script> <!-- Navigation scripts -->
-    <script src="js/footer.js"></script> <!-- Footer scripts -->
-    <script src="js/top.js"></script>   <!-- Top button scripts -->
-    <script src="js/address.js"></script> <!-- Address scripts -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enquiry Form - TechFlow Solutions</title>
+        <meta name="description" content="Submit your enquiry to TechFlow Solutions for custom software development, mobile apps, and IT consulting services.">
+        <link rel="stylesheet" href="css/styles.css"> <!-- Main style -->
+        <link rel="stylesheet" href="css/enquiry.css">  <!-- Enquiry form specific styles -->
+        <link rel="stylesheet" href="css/header.css"> <!-- Header styles -->
+        <link rel="stylesheet" href="css/footer.css"> <!-- Footer styles -->
+        <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive styles -->
+        <link rel="stylesheet" href="css/special.css"> <!-- Special styles -->
+        <script src="js/head.js"></script> <!-- Head scripts -->
+        <script src="js/navigation.js"></script> <!-- Navigation scripts -->
+        <script src="js/footer.js"></script> <!-- Footer scripts -->
+        <script src="js/top.js"></script>   <!-- Top button scripts -->
+        <script src="js/address.js"></script> <!-- Address scripts -->
+        <script src="js/mobile-menu.js"></script> <!-- Mobile Menu Script -->
+    </head>
 <body>
     <!-- ================= Header Section ================= -->
     <header class="header">
@@ -24,9 +29,28 @@
                      loading="lazy">   <!-- Logo image -->
             </a>
         </div>
-        <nav class="nav-links" aria-label="Main Navigation"></nav>
+        <nav id="desktop-nav" class="nav-links" aria-label="Main Navigation"></nav>
+
+        <!-- Hamburger Menu Button -->
+        <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
         <address class="contact-info"></address>
     </header>
+
+    <!-- Mobile Sidebar Menu -->
+    <aside class="sidebar" id="mobile-sidebar">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy">
+        </div>
+        <nav id="mobile-nav" class="nav-links" aria-label="Mobile Navigation"></nav>
+    </aside>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
     <!-- ================= Enquiry Form Section ================= -->
     <section class="contact" id="enquiry">
@@ -183,5 +207,8 @@
             });
         });
     </script>
+
+    <!-- Mobile Menu Script -->
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>
