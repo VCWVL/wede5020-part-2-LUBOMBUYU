@@ -72,6 +72,9 @@ class MobileMenu {
     openMenu() {
         this.isOpen = true;
         this.sidebar.classList.add('active');
+        // Ensure the mobile nav is populated when the menu is opened
+        this.populateSidebarNav();
+
         this.overlay.classList.add('active');
         this.hamburger.classList.add('active');
         this.hamburger.setAttribute('aria-expanded', 'true');

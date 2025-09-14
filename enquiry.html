@@ -7,10 +7,12 @@
         <meta name="description" content="Submit your enquiry to TechFlow Solutions for custom software development, mobile apps, and IT consulting services.">
         <link rel="stylesheet" href="css/styles.css"> <!-- Main style -->
         <link rel="stylesheet" href="css/enquiry.css">  <!-- Enquiry form specific styles -->
+        <link rel="stylesheet" href="css/index.css"> <!-- Index styles for hero banner -->
         <link rel="stylesheet" href="css/header.css"> <!-- Header styles -->
         <link rel="stylesheet" href="css/footer.css"> <!-- Footer styles -->
         <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive styles -->
         <link rel="stylesheet" href="css/special.css"> <!-- Special styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <script src="js/head.js"></script> <!-- Head scripts -->
         <script src="js/navigation.js"></script> <!-- Navigation scripts -->
         <script src="js/footer.js"></script> <!-- Footer scripts -->
@@ -136,79 +138,19 @@
                 </select>
             </div>
             
-            <button type="submit" class="btn-primary">Submit Enquiry</button>
-            <div id="formStatus" class="form-status hidden"></div>
+            <div class="form-submit-area">
+                <button type="submit" class="btn-primary">Submit Enquiry</button>
+                <div id="formStatus" class="form-status hidden"></div>
+            </div>
         </form>
     </section>
 
     <!-- ================= Footer Section ================= -->
     <footer class="footer"></footer>
 
-    <!-- ================= Google Sheets Integration Script ================= -->
-    <script>
-        // Pre-select service from URL parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        const serviceFromUrl = urlParams.get('service');
-        const serviceSelect = document.getElementById('service');
-
-        if (serviceFromUrl && serviceSelect) {
-            // Check if an option with this value exists
-            const optionExists = Array.from(serviceSelect.options).some(option => option.value === serviceFromUrl);
-            if (optionExists) {
-                serviceSelect.value = serviceFromUrl;
-            }
-        }
-
-        // Replace with your actual Google Form URL
-        const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_UNIQUE_FORM_ID/formResponse';
-        
-        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const form = this;
-            const formData = new FormData(form);
-            const submitButton = form.querySelector('button[type="submit"]');
-            const statusDiv = document.getElementById('formStatus');
-            
-            // Disable submit button
-            submitButton.disabled = true;
-            submitButton.textContent = 'Submitting...';
-            
-            // Create URL with form data
-            const url = new URL(GOOGLE_FORM_URL);
-            const params = new URLSearchParams();
-            
-            // Add form data to URL parameters
-            for (let [key, value] of formData.entries()) {
-                if (value.trim()) {
-                    params.append(key, value);
-                }
-            }
-            
-            // Submit to Google Form
-            fetch(GOOGLE_FORM_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                body: params
-            })
-            .then(() => {
-                statusDiv.innerHTML = '<p>Thank you! Your enquiry has been submitted successfully. We will contact you within 24 hours.</p>';
-                statusDiv.className = 'form-status success';
-                form.reset();
-            })
-            .catch(error => {
-                statusDiv.innerHTML = '<p>Sorry, there was an error submitting your form. Please try again or contact us directly.</p>';
-                statusDiv.className = 'form-status error';
-                console.error('Error:', error);
-            })
-            .finally(() => {
-                submitButton.disabled = false;
-                submitButton.textContent = 'Submit Enquiry';
-            });
-        });
-    </script>
-
     <!-- Mobile Menu Script -->
     <script src="js/mobile-menu.js"></script>
+    <!-- Google Form Submission Script -->
+    <script src="js/google-form.js"></script>
 </body>
 </html>

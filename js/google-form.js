@@ -17,7 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
         return; // Exit if the form is not on this page
     }
 
-    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfWDSC1eAFVgA2Q0W9iUX2MD7jeJ2dvrUvvTdvjV8znqIaYig/formResponse';
+    // --- IMPORTANT ---
+    // Replace with your actual Google Form URL and Entry IDs.
+    // To find these IDs: 
+    // 1. Open your live Google Form.
+    // 2. Right-click on an input field and choose "Inspect".
+    // 3. Find the `name` attribute of the <input> tag (e.g., name="entry.123456789").
+    // 4. Replace 'YOUR_UNIQUE_FORM_ID' and 'YOUR_..._ENTRY_ID' in your enquiry.html file first.
+    //    This script will then pick them up.
+
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_UNIQUE_FORM_ID/formResponse';
     
     enquiryForm.addEventListener('submit', function(e) {
         e.preventDefault();

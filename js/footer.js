@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="footer-content">
     <div class="social-media">
         <a href="https://www.facebook.com/TechFlowSolutions" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
-            <img src="images/facebook.svg" alt="Facebook" loading="lazy" onerror="this.onerror=null;this.src='images/facebook.png';">
+            <i class="fab fa-facebook-f"></i>
         </a>
         <a href="https://twitter.com/TechFlowSol" target="_blank" rel="noopener" aria-label="Follow us on Twitter">
-            <img src="images/twitter.svg" alt="Twitter" loading="lazy" onerror="this.onerror=null;this.src='images/twitter.png';">
+            <i class="fab fa-twitter"></i>
         </a>
         <a href="https://www.linkedin.com/company/techflow-solutions" target="_blank" rel="noopener" aria-label="Connect with us on LinkedIn">
-            <img src="images/linkedin.svg" alt="LinkedIn" loading="lazy" onerror="this.onerror=null;this.src='images/linkedin.png';">
+            <i class="fab fa-linkedin-in"></i>
         </a>
         <a href="https://www.instagram.com/techflow_solutions" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
-            <img src="images/instagram.svg" alt="Instagram" loading="lazy" onerror="this.onerror=null;this.src='images/instagram.png';">
+            <i class="fab fa-instagram"></i>
         </a>
     </div>
         <div class="footer-info">
