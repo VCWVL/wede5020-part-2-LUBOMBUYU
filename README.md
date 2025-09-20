@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TechFlow Solutions Website
 
 ## Student Information
@@ -376,3 +377,6 @@ Public Domain and Creative Commons Resources: Free images, icons, and fonts sour
 Original Content: Text descriptions (company overview, services, portfolio examples) were researched and written by the student.
 
 
+=======
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jq3WPKhs)
+>>>>>>> 5bdfbb84a510e05229a3ee110d2985d8163a36d5
