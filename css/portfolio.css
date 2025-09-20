@@ -22,13 +22,14 @@
 }
 
 .portfolio h1 {
-    color: var(--primary-color);
+    color:  var(--text-dark);
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
     background: var(--bg-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
     background-clip: text;
     position: relative;
 }
