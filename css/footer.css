@@ -8,7 +8,9 @@
     letter-spacing: 1px;
     border-top: 3px solid var(--accent-color);
     position: relative;
+    width: 100%;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .footer::before {
@@ -22,8 +24,7 @@
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
@@ -46,11 +47,8 @@
     justify-content: center;
     width: 50px;
     height: 50px;
-    background: var(--bg-white);
     border-radius: 50%;
     transition: var(--transition-fast);
-    box-shadow: var(--shadow-light);
-    border: 2px solid transparent;
 }
 
 .social-media a:hover,
@@ -58,18 +56,16 @@
     transform: translateY(-3px) scale(1.1);
     box-shadow: var(--shadow-medium);
     border-color: var(--accent-color);
-    background: var(--accent-color);
 }
 
-.social-media img {
-    width: 24px;
-    height: 24px;
+.social-media i {
+    color: var(--accent-color);
     transition: var(--transition-fast);
 }
 
-.social-media a:hover img,
-.social-media a:focus img {
-    filter: brightness(0) invert(1);
+.social-media a:hover i,
+.social-media a:focus i {
+    color: var(--accent-hover);
 }
 
 /* Footer Info */
@@ -119,9 +115,8 @@
         height: 45px;
     }
 
-    .social-media img {
-        width: 20px;
-        height: 20px;
+    .social-media i {
+        font-size: 20px;
     }
 
     .footer-info p {
@@ -156,9 +151,8 @@
         height: 40px;
     }
 
-    .social-media img {
-        width: 18px;
-        height: 18px;
+    .social-media i {
+        font-size: 18px;
     }
 
     .footer-info p {
@@ -172,4 +166,23 @@
     .footer-info p:last-child {
         font-size: 0.75rem;
     }
+}
+
+/* Gold social media icons */
+.footer .social-media a {
+    background: var(--bg-light);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer .social-media a:hover {
+    background: var(--accent-color);
+    color: var(--bg-white);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+}
+
+.footer .social-media i {
+    transition: var(--transition-fast);
 }

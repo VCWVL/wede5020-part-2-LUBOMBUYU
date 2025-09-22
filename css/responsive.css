@@ -1,18 +1,124 @@
-/* Responsive Design with Conditional Media Queries */
+/* Responsive Design with Enhanced Conditional Media Queries */
+
+/* Main Navigation Styles */
+.main-nav {
+    display: flex;
+    flex-grow: 1; /* Allow nav to take space */
+    justify-content: center; /* Center nav links container */
+    overflow-x: auto; /* Enable horizontal scroll on small screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+.main-nav::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on WebKit browsers */
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: nowrap; /* Keep items in a single line */
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem; /* Add padding for small screens */
+    gap: 0.5rem;
+}
+
+.main-nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition-fast);
+    white-space: nowrap; /* Prevent links from wrapping */
+}
+
+.main-nav a:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+}
+
+/* Style for the active navigation link */
+.main-nav a.active {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+}
+
+/* Enhanced Responsive Typography Scale */
+:root {
+    /* Base font sizes using rem for scalability */
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 1.875rem;  /* 30px */
+    --font-size-4xl: 2.25rem;   /* 36px */
+    --font-size-5xl: 3rem;      /* 48px */
+    --font-size-6xl: 3.75rem;   /* 60px */
+
+    /* Responsive spacing using rem */
+    --spacing-xs: 0.25rem;      /* 4px */
+    --spacing-sm: 0.5rem;       /* 8px */
+    --spacing-md: 1rem;         /* 16px */
+    --spacing-lg: 1.5rem;       /* 24px */
+    --spacing-xl: 2rem;         /* 32px */
+    --spacing-2xl: 3rem;        /* 48px */
+    --spacing-3xl: 4rem;        /* 64px */
+}
+
+/* Ultra-wide Desktop Styles */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-2xl);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-2xl);
+    }
+
+    .main-nav a {
+        font-size: var(--font-size-xl);
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    h1 { font-size: var(--font-size-6xl); }
+    h2 { font-size: var(--font-size-5xl); }
+    h3 { font-size: var(--font-size-4xl); }
+}
 
 /* Large Desktop Styles */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1439px) {
     .container {
         max-width: 1400px;
     }
 
     .services-container {
         grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-xl);
     }
 
     .portfolio-container {
         grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xl);
     }
+
+    .main-nav a {
+        font-size: var(--font-size-lg);
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    h1 { font-size: var(--font-size-5xl); }
+    h2 { font-size: var(--font-size-4xl); }
+    h3 { font-size: var(--font-size-3xl); }
 }
 
 /* Desktop Styles */
@@ -27,6 +133,11 @@
 
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-nav a {
+        font-size: 1rem; /* Standard desktop font size */
+        padding: 0.6rem 1.1rem;
     }
 }
 
@@ -44,13 +155,9 @@
         width: 7rem;
     }
 
-    .nav-links ul {
-        gap: 1rem;
-    }
-
-    .nav-link {
-        font-size: 1rem;
-        padding: 0.625rem 1rem;
+    .main-nav a {
+        font-size: 0.95rem; /* Slightly smaller for landscape tablets */
+        padding: 0.5rem 1rem;
     }
 
     h1 { font-size: 2.25rem; }
@@ -80,13 +187,13 @@
         width: 6.5rem;
     }
 
-    .nav-links ul {
-        gap: 0.75rem;
+    .contact-info {
+        display: none; /* Hide contact info on portrait tablets to save space */
     }
 
-    .nav-link {
-        font-size: 0.95rem;
-        padding: 0.5rem 0.875rem;
+    .main-nav a {
+        font-size: 0.9rem; /* Smaller for portrait tablets */
+        padding: 0.5rem 0.8rem;
     }
 
     h1 { font-size: 2.125rem; }
@@ -102,69 +209,166 @@
     }
 }
 
-/* Mobile Styles - Large */
-@media (min-width: 481px) and (max-width: 767px) {
+/* Small Tablet Styles */
+@media (min-width: 576px) and (max-width: 767px) {
     .container {
-        padding: 0 1rem;
+        max-width: 100%;
+        padding: 0 var(--spacing-lg);
     }
 
     .header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem;
-        gap: 1rem;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-lg);
     }
 
     .logo img {
         width: 6rem;
     }
 
-    /* Hide desktop navigation on mobile */
-    .nav-links {
-        display: none;
+    .main-nav a {
+        font-size: var(--font-size-base);
+        padding: var(--spacing-sm) var(--spacing-md);
     }
 
-    /* Show hamburger menu on mobile */
-    .nav-toggle {
-        display: block;
-        order: 2;
-    }
-
-    /* Hamburger animation */
-    .nav-toggle.active .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .nav-toggle.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .nav-toggle.active .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    /* Typography scaling for mobile */
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
-    h3 { font-size: 1.25rem; }
-    h4 { font-size: 1.125rem; }
-    h5 { font-size: 1rem; }
-    h6 { font-size: 0.875rem; }
+    /* Typography scaling */
+    h1 { font-size: var(--font-size-4xl); }
+    h2 { font-size: var(--font-size-3xl); }
+    h3 { font-size: var(--font-size-2xl); }
+    h4 { font-size: var(--font-size-xl); }
+    h5 { font-size: var(--font-size-lg); }
+    h6 { font-size: var(--font-size-base); }
 
     body {
-        font-size: 14px;
+        font-size: var(--font-size-base);
     }
 
     .btn {
         width: 100%;
-        padding: 1rem 1.5rem;
+        padding: var(--spacing-lg) var(--spacing-xl);
+        font-size: var(--font-size-base);
     }
 
     /* Services responsive */
     .services-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .service-item {
+        max-width: 100%;
+    }
+
+    /* Portfolio responsive */
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .portfolio-item {
+        max-width: 100%;
+    }
+
+    /* Contact responsive */
+    .contact {
+        padding: var(--spacing-xl) var(--spacing-lg);
+    }
+
+    .contact form {
+        padding: var(--spacing-lg);
+    }
+
+    /* Map responsive */
+    .map {
+        padding: var(--spacing-lg);
+        margin: var(--spacing-lg) auto;
+    }
+
+    .map iframe,
+    .contact-iframe {
+        height: 300px;
+    }
+
+    /* Footer responsive */
+    .footer {
+        padding: var(--spacing-lg);
+        font-size: var(--font-size-base);
+    }
+
+    .footer-content {
+        gap: var(--spacing-lg);
+    }
+
+    .social-media {
+        gap: var(--spacing-lg);
+    }
+
+    .social-media a {
+        width: 48px;
+        height: 48px;
+    }
+
+    .social-media img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-info p {
+        font-size: var(--font-size-sm);
+    }
+
+    .footer-info p:first-child {
+        font-size: var(--font-size-base);
+    }
+
+    .footer-info p:last-child {
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* Mobile Styles - Large */
+@media (min-width: 481px) and (max-width: 575px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: center;
+        padding: var(--spacing-md);
+        gap: var(--spacing-md);
+    }
+
+    .logo img {
+        width: 5.5rem;
+    }
+
+    .main-nav a {
+        font-size: var(--font-size-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    /* Typography scaling for mobile */
+    h1 { font-size: var(--font-size-3xl); }
+    h2 { font-size: var(--font-size-2xl); }
+    h3 { font-size: var(--font-size-xl); }
+    h4 { font-size: var(--font-size-lg); }
+    h5 { font-size: var(--font-size-base); }
+    h6 { font-size: var(--font-size-sm); }
+
+    body {
+        font-size: var(--font-size-sm);
+    }
+
+    .btn {
+        width: 100%;
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: var(--font-size-sm);
+    }
+
+    /* Services responsive */
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
     }
 
     .service-item {
@@ -174,60 +378,54 @@
 
     /* Portfolio responsive */
     .portfolio-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
     }
 
     .portfolio-item {
         width: 100%;
         max-width: 100%;
-        margin: 0 0 1.5rem 0;
     }
 
     /* Contact responsive */
     .contact {
         max-width: 100%;
-        padding: 2rem 1rem;
+        padding: var(--spacing-xl) var(--spacing-md);
     }
 
     .contact form {
-        padding: 1.5rem 1rem;
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 
     /* Map responsive */
     .map {
         max-width: 100%;
-        padding: 1rem;
-        margin: 1.5rem auto;
+        padding: var(--spacing-md);
+        margin: var(--spacing-lg) auto;
     }
 
-    .map iframe {
-        height: 250px;
-    }
-
+    .map iframe,
     .contact-iframe {
         height: 250px;
     }
 
     /* Footer responsive */
     .footer {
-        padding: 1.5rem 1rem;
-        font-size: 1rem;
+        padding: var(--spacing-lg) var(--spacing-md);
+        font-size: var(--font-size-sm);
     }
 
     .footer-content {
-        padding: 0 1rem;
-        gap: 1rem;
+        gap: var(--spacing-md);
     }
 
     .social-media {
-        gap: 1rem;
+        gap: var(--spacing-md);
     }
 
     .social-media a {
-        width: 45px;
-        height: 45px;
+        width: 44px;
+        height: 44px;
     }
 
     .social-media img {
@@ -236,82 +434,90 @@
     }
 
     .footer-info p {
-        font-size: 0.9rem;
+        font-size: var(--font-size-xs);
     }
 
     .footer-info p:first-child {
-        font-size: 1rem;
+        font-size: var(--font-size-sm);
     }
 
     .footer-info p:last-child {
-        font-size: 0.8rem;
+        font-size: var(--font-size-xs);
     }
 }
 
 /* Mobile Styles - Small */
 @media (max-width: 480px) {
     .container {
-        padding: 0 0.75rem;
+        padding: 0 var(--spacing-sm);
     }
 
     .header {
-        padding: 0.75rem;
-        flex-direction: column;
-        gap: 0.5rem;
+        padding: var(--spacing-sm);
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: var(--spacing-md); /* Increase gap for better spacing */
+    }
+
+    .main-nav {
+        order: 2; /* Move nav below logo and contact info */
     }
 
     .logo img {
         width: 5rem;
     }
 
-    .nav-toggle {
-        align-self: flex-end;
+    .main-nav a {
+        font-size: var(--font-size-xs); /* Smallest font size for small mobile */
+        padding: var(--spacing-xs) var(--spacing-sm);
     }
 
-    .nav-link {
-        padding: 0.625rem 0.75rem;
-        font-size: 1rem;
-    }
+    /* Typography scaling for small mobile */
+    h1 { font-size: var(--font-size-2xl); }
+    h2 { font-size: var(--font-size-xl); }
+    h3 { font-size: var(--font-size-lg); }
+    h4 { font-size: var(--font-size-base); }
+    h5 { font-size: var(--font-size-sm); }
+    h6 { font-size: var(--font-size-xs); }
 
-    h1 { font-size: 1.75rem; }
-    h2 { font-size: 1.375rem; }
-    h3 { font-size: 1.125rem; }
+    body {
+        font-size: var(--font-size-xs);
+    }
 
     .btn {
-        padding: 0.875rem 1.25rem;
-        font-size: 0.875rem;
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: var(--font-size-xs);
     }
 
     /* Enhanced mobile responsiveness */
     .services-container {
-        gap: 1rem;
+        gap: var(--spacing-md);
     }
 
     .service-item {
-        padding: 1.25rem;
+        padding: var(--spacing-lg);
     }
 
     .portfolio-container {
-        gap: 1rem;
+        gap: var(--spacing-md);
     }
 
     .portfolio-item {
-        margin: 0 0 1rem 0;
+        margin: 0 0 var(--spacing-md) 0;
     }
 
     /* Contact form adjustments */
     .contact {
-        padding: 1.5rem 0.75rem;
+        padding: var(--spacing-lg) var(--spacing-sm);
     }
 
     .contact form {
-        padding: 1.25rem 0.75rem;
+        padding: var(--spacing-lg) var(--spacing-sm);
     }
 
     /* Map adjustments */
     .map {
-        padding: 0.75rem;
-        margin: 1rem auto;
+        padding: var(--spacing-sm);
+        margin: var(--spacing-md) auto;
     }
 
     .map iframe,
@@ -321,16 +527,16 @@
 
     /* Footer adjustments */
     .footer {
-        padding: 1.25rem 0.75rem;
-        font-size: 0.95rem;
+        padding: var(--spacing-lg) var(--spacing-sm);
+        font-size: var(--font-size-xs);
     }
 
     .footer-content {
-        gap: 0.75rem;
+        gap: var(--spacing-sm);
     }
 
     .social-media {
-        gap: 0.75rem;
+        gap: var(--spacing-sm);
     }
 
     .social-media a {
@@ -344,15 +550,15 @@
     }
 
     .footer-info p {
-        font-size: 0.85rem;
+        font-size: var(--font-size-xs);
     }
 
     .footer-info p:first-child {
-        font-size: 0.95rem;
+        font-size: var(--font-size-sm);
     }
 
     .footer-info p:last-child {
-        font-size: 0.75rem;
+        font-size: var(--font-size-xs);
     }
 }
 

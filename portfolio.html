@@ -15,41 +15,37 @@
         <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <script src="js/navigation.js"></script> <!-- Navigation Script -->
-        <script src="js/address.js"></script> <!-- Address Script -->
-        <script src="js/footer.js"></script> <!-- Footer Script -->
-        <script src="js/top.js"></script> <!-- Scroll to Top Script -->
         <script src="js/head.js"></script>  <!-- Head Script for common functionalities -->
-        <script src="js/mobile-menu.js"></script> <!-- Mobile Menu Script -->
-    </head>
+
+
+
 
 <body>
     <!-- ================= Header Section ================= -->
     <header class="header">
+        <!-- Logo Section -->
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy"> <!-- Logo Image -->
+                <!-- Company logo with responsive images -->
+                <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy">
             </a>
         </div>
 
-        <nav id="desktop-nav" class="nav-links" aria-label="Main Navigation"></nav> <!-- Navigation Menu -->
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-        <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
-        <address class="contact-info"></address> <!-- Contact Information -->
+        <!-- Contact Information -->
+        <address class="contact-info"></address>
     </header>
-
-    <aside class="sidebar" id="mobile-sidebar">
-        <div class="logo">
-            <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy">
-        </div>
-        <nav id="mobile-nav" class="nav-links" aria-label="Mobile Navigation"></nav>
-    </aside>
-
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
     <!-- ================= Portfolio Section ================= -->
     <main class="portfolio" id="portfolio">
@@ -153,7 +149,9 @@
     <footer class="footer"></footer>
 
     <!-- Scripts are loaded at the end of the body for better performance -->
-    <script src="js/mobile-menu.js"></script>
+    <script src="js/address.js"></script> <!-- Address Script -->
+    <script src="js/footer.js"></script> <!-- Footer Script -->
+    <script src="js/top.js"></script> <!-- Scroll to Top Script -->
 
 </body>
 

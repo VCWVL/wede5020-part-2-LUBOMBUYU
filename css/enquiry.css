@@ -2,7 +2,10 @@
    Enquiry Form Styles - Enhanced Design
    ========================================================================== */
 
-/* Enquiry Form Container */
+/* Enquiry page uses standard header styling from header.css */
+
+/* Contact Section */
+
 .contact {
     padding: 4rem 2rem;
     background: var(--bg-gradient);

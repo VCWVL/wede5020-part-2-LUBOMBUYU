@@ -7,7 +7,6 @@
         <meta name="description" content="Submit your enquiry to TechFlow Solutions for custom software development, mobile apps, and IT consulting services.">
         <link rel="stylesheet" href="css/styles.css"> <!-- Main style -->
         <link rel="stylesheet" href="css/enquiry.css">  <!-- Enquiry form specific styles -->
-        <link rel="stylesheet" href="css/index.css"> <!-- Index styles for hero banner -->
         <link rel="stylesheet" href="css/header.css"> <!-- Header styles -->
         <link rel="stylesheet" href="css/footer.css"> <!-- Footer styles -->
         <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive styles -->
@@ -18,41 +17,36 @@
         <script src="js/footer.js"></script> <!-- Footer scripts -->
         <script src="js/top.js"></script>   <!-- Top button scripts -->
         <script src="js/address.js"></script> <!-- Address scripts -->
-        <script src="js/mobile-menu.js"></script> <!-- Mobile Menu Script -->
     </head>
-<body>
+<body class="enquiry-page">
     <!-- ================= Header Section ================= -->
     <header class="header">
+        <!-- Logo Section -->
         <div class="logo">
             <a href="index.html">
+                <!-- Company logo with responsive images -->
                 <img src="images/logo.jpeg" alt="TechFlow Solutions Logo"
                      srcset="images/logo.jpeg 1x, images/logo.jpeg 2x"
                      sizes="(max-width: 768px) 150px, 200px"
-                     loading="lazy">   <!-- Logo image -->
+                     loading="lazy">
             </a>
         </div>
-        <nav id="desktop-nav" class="nav-links" aria-label="Main Navigation"></nav>
 
-        <!-- Hamburger Menu Button -->
-        <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
+        <!-- Contact Information -->
         <address class="contact-info"></address>
     </header>
-
-    <!-- Mobile Sidebar Menu -->
-    <aside class="sidebar" id="mobile-sidebar">
-        <div class="logo">
-            <img src="images/logo.jpeg" alt="TechFlow Solutions Logo" loading="lazy">
-        </div>
-        <nav id="mobile-nav" class="nav-links" aria-label="Mobile Navigation"></nav>
-    </aside>
-
-    <!-- Sidebar Overlay -->
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
     <!-- ================= Enquiry Form Section ================= -->
     <section class="contact" id="enquiry">
@@ -149,7 +143,7 @@
     <footer class="footer"></footer>
 
     <!-- Mobile Menu Script -->
-    <script src="js/mobile-menu.js"></script>
+    <script src="js/navigation.js"></script>
     <!-- Google Form Submission Script -->
     <script src="js/google-form.js"></script>
 </body>

@@ -1,9 +1,9 @@
 /* Portfolio Section - Enhanced Modern Design */
 .portfolio {
     background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
-    padding: 5rem 2rem 4rem;
-    max-width: 1400px;
-    margin: 4rem auto;
+    padding: var(--spacing-3xl) var(--spacing-xl) var(--spacing-2xl);
+    max-width: 87.5rem; /* 1400px - will be converted to relative unit */
+    margin: var(--spacing-2xl) auto;
     border-radius: var(--border-radius-large);
     box-shadow: var(--shadow-medium);
     text-align: center;
@@ -17,19 +17,19 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 0.25rem; /* 4px - will be converted to relative unit */
     background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
 }
 
 .portfolio h1 {
     color:  var(--text-dark);
-    font-size: 3.5rem;
+    font-size: var(--font-size-6xl);
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-md);
     background: var(--bg-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
     background-clip: text;
     position: relative;
 }
@@ -37,27 +37,27 @@
 .portfolio h1::after {
     content: '';
     display: block;
-    width: 80px;
-    height: 4px;
+    width: 5rem; /* 80px - will be converted to relative unit */
+    height: 0.25rem; /* 4px - will be converted to relative unit */
     background: var(--accent-color);
-    margin: 1rem auto 2rem;
-    border-radius: 2px;
+    margin: var(--spacing-md) auto var(--spacing-xl);
+    border-radius: 0.125rem; /* 2px - will be converted to relative unit */
 }
 
 .portfolio > p {
-    font-size: 1.25rem;
+    font-size: var(--font-size-xl);
     color: var(--text-muted);
-    max-width: 700px;
-    margin: 0 auto 4rem;
+    max-width: 43.75rem; /* 700px - will be converted to relative unit */
+    margin: 0 auto var(--spacing-2xl);
     line-height: 1.7;
 }
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(23.75rem, 1fr)); /* 380px - will be converted to relative unit */
+    gap: var(--spacing-2xl);
     justify-items: center;
-    max-width: 1300px;
+    max-width: 81.25rem; /* 1300px - will be converted to relative unit */
     margin: 0 auto;
 }
 
@@ -66,8 +66,8 @@
     border-radius: var(--border-radius-large);
     box-shadow: var(--shadow-light);
     width: 100%;
-    max-width: 380px;
-    padding: 2.5rem 2rem;
+    max-width: 23.75rem; /* 380px - will be converted to relative unit */
+    padding: var(--spacing-2xl) var(--spacing-xl);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,14 +84,14 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 0.25rem; /* 4px */
     background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     transform: scaleX(0);
     transition: var(--transition-normal);
 }
 
 .portfolio-item:hover {
-    transform: translateY(-12px) scale(1.02);
+    transform: translateY(-0.75rem) scale(1.02); /* -12px - will be converted to relative unit */
     box-shadow: var(--shadow-heavy);
 }
 
@@ -100,13 +100,13 @@
 }
 
 .portfolio-item img {
-    width: 6rem;
-    height: 6rem;
+    width: 3.75rem; /* 60px - will be converted to relative unit */
+    height: 3.75rem; /* 60px - will be converted to relative unit */
     object-fit: contain;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--spacing-lg);
     border-radius: var(--border-radius);
     background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
-    padding: 1rem;
+    padding: var(--spacing-md);
     box-shadow: var(--shadow-medium);
     transition: var(--transition-normal);
 }
@@ -117,18 +117,18 @@
 }
 
 .portfolio-item h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-2xl);
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-md);
     color: var(--primary-color);
     text-align: center;
     line-height: 1.3;
 }
 
 .portfolio-item p {
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     color: var(--text-muted);
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--spacing-lg);
     line-height: 1.6;
     text-align: center;
     flex-grow: 1;
@@ -143,20 +143,20 @@
 }
 
 .portfolio-item li {
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
     color: var(--text-dark);
-    margin-bottom: 0.75rem;
-    padding: 0.5rem 1rem;
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-md);
     background: var(--bg-light);
     border-radius: var(--border-radius);
-    border-left: 3px solid var(--accent-color);
+    border-left: 0.1875rem solid var(--accent-color); /* 3px - will be converted to relative unit */
     transition: var(--transition-fast);
 }
 
 .portfolio-item li:hover {
     background: var(--accent-color);
     color: var(--primary-color);
-    transform: translateX(5px);
+    transform: translateX(0.3125rem); /* 5px - will be converted to relative unit */
 }
 
 .portfolio-item li strong {
@@ -169,15 +169,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
 }
 
 .filter-btn {
     background: var(--bg-white);
     color: var(--text-muted);
     border: 2px solid var(--primary-color);
-    padding: 0.75rem 1.5rem;
+    padding: var(--spacing-sm) var(--spacing-lg);
     border-radius: var(--border-radius);
     font-weight: 600;
     cursor: pointer;
@@ -188,7 +188,7 @@
 .filter-btn.active {
     background: var(--primary-color);
     color: var(--text-light);
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem); /* -2px - will be converted to relative unit */
     box-shadow: var(--shadow-light);
 }
 
@@ -213,26 +213,26 @@
 .modal-content {
     background: var(--bg-white);
     border-radius: var(--border-radius-large);
-    max-width: 800px;
+    max-width: 50rem; /* 800px - will be converted to relative unit */
     width: 90%;
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
-    padding: 2rem;
+    padding: var(--spacing-xl);
     box-shadow: var(--shadow-heavy);
 }
 
 .modal-close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
     background: var(--primary-color);
     color: var(--text-light);
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
+    width: 2.5rem; /* 40px - will be converted to relative unit */
+    height: 2.5rem; /* 40px - will be converted to relative unit */
+    font-size: var(--font-size-2xl);
     cursor: pointer;
     transition: var(--transition-fast);
 }
@@ -245,88 +245,88 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
     .portfolio-container {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* 320px - will be converted to relative unit */
+        gap: var(--spacing-xl);
     }
 
     .portfolio-item {
-        max-width: 320px;
-        padding: 2rem 1.5rem;
+        max-width: 20rem; /* 320px - will be converted to relative unit */
+        padding: var(--spacing-xl) var(--spacing-lg);
     }
 }
 
 @media (max-width: 768px) {
     .portfolio {
-        padding: 3rem 1rem 3rem;
-        margin: 2rem 1rem;
+        padding: var(--spacing-2xl) var(--spacing-md) var(--spacing-2xl);
+        margin: var(--spacing-xl) var(--spacing-md);
     }
 
     .portfolio h1 {
-        font-size: 2.5rem;
+        font-size: var(--font-size-5xl);
     }
 
     .portfolio > p {
-        font-size: 1.125rem;
-        margin-bottom: 3rem;
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--spacing-2xl);
     }
 
     .portfolio-container {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: var(--spacing-xl);
     }
 
     .portfolio-item {
         max-width: 100%;
-        padding: 2rem 1.5rem;
+        padding: var(--spacing-xl) var(--spacing-lg);
     }
 
     .portfolio-item h3 {
-        font-size: 1.375rem;
+        font-size: var(--font-size-3xl);
     }
 
     .portfolio-item p {
-        font-size: 0.95rem;
+        font-size: var(--font-size-sm);
     }
 
     .portfolio-item li {
-        font-size: 0.9rem;
-        padding: 0.5rem;
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-xs);
     }
 
     .portfolio-filters {
-        gap: 0.75rem;
+        gap: var(--spacing-sm);
     }
 
     .filter-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
+        padding: var(--spacing-xs) var(--spacing-md);
+        font-size: var(--font-size-xs);
     }
 }
 
 @media (max-width: 480px) {
     .portfolio h1 {
-        font-size: 2rem;
+        font-size: var(--font-size-4xl);
     }
 
     .portfolio-item {
-        padding: 1.5rem 1rem;
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 
     .portfolio-item img {
-        width: 5rem;
-        height: 5rem;
+        width: 3.125rem; /* 50px - will be converted to relative unit */
+        height: 3.125rem; /* 50px - will be converted to relative unit */
     }
 
     .portfolio-item h3 {
-        font-size: 1.25rem;
+        font-size: var(--font-size-2xl);
     }
 
     .portfolio-item p {
-        font-size: 0.9rem;
+        font-size: var(--font-size-xs);
     }
 
     .portfolio-item li {
-        font-size: 0.85rem;
+        font-size: 0.8125rem; /* 13px - will be converted to relative unit */
     }
 }
 
@@ -334,7 +334,7 @@
 @keyframes portfolioFadeIn {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(1.875rem); /* 30px - will be converted to relative unit */
     }
     to {
         opacity: 1;

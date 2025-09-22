@@ -5,6 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] - 2024-12-XX - Part 3: Cleanup and Standardization
+
+### Added
+- **File Cleanup**: Removed unnecessary files including backup files, unused JavaScript files, and development documentation
+- **Standardized Commenting**: Implemented uniform commenting style across all HTML files
+- **Code Organization**: Improved file structure and removed redundant files
+
+### Changed
+- **Commenting Style**: Standardized all HTML comments to use consistent format:
+  - Section headers: `<!-- ================= Section Name ================= -->`
+  - Element descriptions: `<!-- Element description -->`
+  - Inline comments: `<!-- Comment -->`
+- **File Structure**: Cleaned up project structure by removing:
+  - `css/middle-nav.css.backup` (backup file)
+  - `css/middle-nav.js` (misplaced JavaScript file)
+  - `responsive-nav-example.html` (unused example file)
+  - `TODO.md` (development task file)
+  - `js/middle-nav.js` (unused JavaScript file)
+
+### Fixed
+- **File Organization**: Removed duplicate and unused files
+- **Code Consistency**: Standardized commenting across all HTML pages
+- **Project Structure**: Cleaned up unnecessary development files
+
+### Technical Details
+- **Files Removed**: 6 unnecessary files
+- **Files Updated**: All HTML files with standardized comments
+- **Commenting Standard**: Consistent format across all pages
+
 ## [2.0.0] - 2024-12-XX - Part 2: Designing the Visuals
 
 ### Added
