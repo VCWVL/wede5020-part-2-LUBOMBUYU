@@ -12,6 +12,7 @@
 </div>
 
 ---
+<div align="center">
 
 ## 👤 Student Information
 
@@ -145,12 +146,12 @@ TechFlow-Solutions/
 
 🗺️ Sitemap
 flowchart TD
-    A[TechFlow Solutions Website] --> B[Homepage]
-    A --> C[About Us]
-    A --> D[Services]
-    A --> E[Portfolio]
-    A --> F[Contact]
-    A --> G[Enquiry]
+    A[TechFlow Solutions Website] --> B[index.html]
+    A --> C[about.html]
+    A --> D[services.html]
+    A --> E[portfolio.html]
+    A --> F[contact.html]
+    A --> G[enquiry.html]
 
 ## 🔄 Changelog
 
@@ -174,18 +175,16 @@ flowchart TD
 
 ## 📚 References & Resources
 
-### Development Resources
-- [W3Schools - CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
-- [MDN - Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- [Google Fonts](https://fonts.google.com/) - Roboto & Montserrat
-
-### Assets & Media
-- [Freepik](https://freepik.com) - Icons & Assets
-- [Unsplash](https://unsplash.com) - Royalty-Free Images
+### Reference List
+- Google Fonts. (n.d.) *Google Fonts*. Available at: https://fonts.google.com/ (Accessed: 2023).
+- Mozilla Developer Network (MDN). (n.d.) *Fetch API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 2023).
+- Unsplash. (n.d.) *Unsplash: Beautiful Free Images & Pictures*. Available at: https://unsplash.com/ (Accessed: 2023).
+- W3Schools. (n.d.) *CSS Flexbox*. Available at: https://www.w3schools.com/css/css3_flexbox.asp (Accessed: 2023).
+- Freepik. (n.d.) *Freepik - Free Vectors, Stock Photos & PSD Downloads*. Available at: https://freepik.com/ (Accessed: 2023).
 
 ### Content Sourcing
-- **Public Domain / Creative Commons**: Images, icons, and fonts
-- **Original Content**: Company overview, services, and portfolio text
+- **Public Domain / Creative Commons**: Images, icons, and fonts.
+- **Original Content**: Company overview, services, and portfolio text.
 
 ---
 
