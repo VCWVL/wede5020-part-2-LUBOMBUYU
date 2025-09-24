@@ -69,6 +69,24 @@ This project demonstrates front-end development skills, showcasing a **responsiv
 - 🔍 **SEO-friendly structure**
 - ♿ **WCAG-compliant accessibility** (ARIA labels, keyboard navigation)
 
+## 📸 Website Screenshots
+
+Below are screenshots of the website showcasing its design and responsiveness:
+
+### Desktop View
+![Desktop Homepage](images/screenshots/desktop-homepage.jpg)
+![Desktop Services](images/screenshots/desktop-services.jpg)
+![Desktop Portfolio](images/screenshots/desktop-portfolio.jpg)
+
+### Mobile View
+![Mobile Homepage](images/screenshots/mobile-homepage.jpg)
+![Mobile Navigation](images/screenshots/mobile-navigation.jpg)
+![Mobile Portfolio](images/screenshots/mobile-portfolio.jpg)
+
+### Tablet View
+![Tablet Services](images/screenshots/tablet-services.jpg)
+![Tablet Contact](images/screenshots/tablet-contact.jpg)
+
 ## 🗓️ Timeline & Milestones
 
 | Milestone | Status | Description |
