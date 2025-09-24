@@ -20,6 +20,8 @@
 |----------|----------------|------------|----------------|
 | Lubo Mbuyu | ST10467547 | WED5020 | Varcity College Westville |
 
+</div>
+
 ## 📖 Project Overview
 
 **TechFlow Solutions** is a fictional IT services company specializing in:
