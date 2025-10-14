@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/KA81iLh2)
 <div align="center">
 
 # 🌐 TechFlow Solutions Website
@@ -215,7 +216,6 @@ wede5020-part-2-LUBOMBUYU/
 ```
 
 🗺️ Sitemap
-```mermaid
 flowchart TD
     A[TechFlow Solutions Website] --> B[index.html]
     A --> C[about.html]
@@ -223,7 +223,6 @@ flowchart TD
     A --> E[portfolio.html]
     A --> F[contact.html]
     A --> G[enquiry.html]
-```
 
 ## 🔄 Changelog
 
