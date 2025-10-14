@@ -221,7 +221,17 @@ flowchart TD
 
 ## 🔄 Changelog
 
-### v2.0.0 – Part 2 (Visuals & Responsive Design) ✅
+### v3.0.0 – Part 3: Functionality & SEO Implementation (2025-11-03) ✅
+- 🔍 **Comprehensive SEO Implementation**: Title tags, meta descriptions, meta keywords for all pages
+- 🤖 **Robots.txt & Sitemap**: Search engine crawling instructions and XML sitemap with production URLs
+- ⚡ **Enhanced JavaScript Functionality**: Interactive carousel, navigation highlighting, Google Forms integration
+- 🗺️ **Google Maps Integration**: Embedded maps for office locations
+- 📝 **Form Validation**: Client-side validation with real-time feedback and AJAX submission
+- 🎯 **Service Selection**: Pre-populated enquiry forms from service pages
+- 📱 **Touch & Keyboard Navigation**: Full accessibility support for interactive elements
+- 🚀 **Performance Optimization**: Optimized script loading and error handling
+
+### v2.0.0 – Part 2: Designing the Visuals (2025-09-29) ✅
 - 🎨 CSS variables system (colors, typography, spacing, shadows)
 - 📱 Advanced mobile-first responsive layouts
 - 🍔 Mobile sidebar navigation (hamburger + overlay)
@@ -231,7 +241,7 @@ flowchart TD
 - 🌐 Cross-browser compatibility testing
 - 📚 Documentation updates
 
-### v1.0.0 – Part 1 (Structure & Foundation) ✅
+### v1.0.0 – Part 1: Website Structure and Foundation (2025-08-27) ✅
 - 🏗️ Initial project setup & file structure
 - 📄 Semantic HTML pages created
 - 🎨 Modular CSS for layouts and page-specific styling
