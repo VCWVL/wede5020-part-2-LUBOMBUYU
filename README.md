@@ -215,6 +215,7 @@ wede5020-part-2-LUBOMBUYU/
 ```
 
 🗺️ Sitemap
+```mermaid
 flowchart TD
     A[TechFlow Solutions Website] --> B[index.html]
     A --> C[about.html]
@@ -222,6 +223,7 @@ flowchart TD
     A --> E[portfolio.html]
     A --> F[contact.html]
     A --> G[enquiry.html]
+```
 
 ## 🔄 Changelog
 
