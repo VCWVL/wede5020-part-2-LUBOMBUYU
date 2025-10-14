@@ -93,40 +93,21 @@ For detailed screenshots of the website showcasing its design and responsiveness
 
 ## ⚡ JavaScript Files & Functionality
 
-This project uses vanilla JavaScript for dynamic functionality. Below is a detailed breakdown of each JS file, its purpose, usage, and references:
+This project uses vanilla JavaScript for dynamic functionality. Below is a detailed breakdown of each JS file, its purpose, and usage:
 
 ### Core JavaScript Files
 
-| File | Purpose | Usage | References |
-|------|---------|-------|------------|
-| **`js/head.js`** | Dynamically generates essential `<head>` elements (charset, viewport, title, description, stylesheet) for DRY principles | Included in all HTML files as the first script | MDN: DOM manipulation, insertAdjacentHTML, DOMContentLoaded |
-| **`js/navigation.js`** | Highlights active navigation link based on current page URL | Included in all pages with navigation (index.html, about.html, services.html, contact.html, enquiry.html, portfolio.html) | MDN: querySelector, classList, window.location |
-| **`js/address.js`** | Dynamically inserts contact information (phone/email) into header address element | Included in all pages with header navigation | MDN: querySelector, innerHTML, Template literals |
-| **`js/footer.js`** | Generates consistent footer content with social media links and company info | Included in all pages | MDN: querySelector, innerHTML, Font Awesome icons |
-| **`js/top.js`** | Creates and manages a fixed-position "scroll to top" button with smooth scrolling | Included in pages with scrollable content | MDN: createElement, appendChild, window.scrollTo, CSS fixed positioning |
-| **`js/carousel.js`** | Implements responsive service carousel with navigation, indicators, keyboard/touch support | Initializes on homepage (index.html) for services section | MDN: Classes, Touch events, CSS transforms, W3Schools carousel tutorial |
-| **`js/google-form.js`** | Handles enquiry form submission to Google Forms API with validation and feedback | Included in enquiry.html | MDN: URLSearchParams, FormData, Fetch API, Google Forms API |
-| **`js/maps.js`** | Embeds Google Maps iframes for displaying office locations | Included in contact.html | MDN: querySelector, innerHTML, Google Maps Embed API |
-| **`js/service-enquiry.js`** | Enables service item clicks to navigate to enquiry form with pre-selected service | Included in services.html and enquiry.html | MDN: querySelectorAll, addEventListener, encodeURIComponent, Fetch API |
-
-### JavaScript References & Sources
-
-- **Mozilla Developer Network (MDN)**: Primary reference for JavaScript APIs and DOM manipulation
-  - DOM events: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
-  - Fetch API: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
-  - FormData: https://developer.mozilla.org/en-US/docs/Web/API/FormData
-  - URLSearchParams: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
-
-- **Google APIs**:
-  - Google Forms API: https://developers.google.com/forms/api
-  - Google Maps Embed API: https://developers.google.com/maps/documentation/embed
-
-- **Font Awesome**: Icon library used in footer and navigation
-  - https://fontawesome.com/icons
-
-- **W3Schools**: General web development tutorials
-  - Carousel implementation: https://www.w3schools.com/howto/howto_js_slideshow.asp
-  - Form validation: https://www.w3schools.com/js/js_validation.asp
+| File | Purpose | Usage |
+|------|---------|-------|
+| **`js/head.js`** | Dynamically generates essential `<head>` elements (charset, viewport, title, description, stylesheet) for DRY principles | Included in all HTML files as the first script |
+| **`js/navigation.js`** | Highlights active navigation link based on current page URL | Included in all pages with navigation (index.html, about.html, services.html, contact.html, enquiry.html, portfolio.html) |
+| **`js/address.js`** | Dynamically inserts contact information (phone/email) into header address element | Included in all pages with header navigation |
+| **`js/footer.js`** | Generates consistent footer content with social media links and company info | Included in all pages |
+| **`js/top.js`** | Creates and manages a fixed-position "scroll to top" button with smooth scrolling | Included in pages with scrollable content |
+| **`js/carousel.js`** | Implements responsive service carousel with navigation, indicators, keyboard/touch support | Initializes on homepage (index.html) for services section |
+| **`js/google-form.js`** | Handles enquiry form submission to Google Forms API with validation and feedback | Included in enquiry.html |
+| **`js/maps.js`** | Embeds Google Maps iframes for displaying office locations | Included in contact.html |
+| **`js/service-enquiry.js`** | Enables service item clicks to navigate to enquiry form with pre-selected service | Included in services.html and enquiry.html |
 
 ### Notes on JavaScript Implementation
 
@@ -154,7 +135,7 @@ This project uses vanilla JavaScript for dynamic functionality. Below is a detai
 ## 📁 Project Structure
 
 ```
-TechFlow-Solutions/
+wede5020-part-2-LUBOMBUYU/
 ├── 📄 HTML Files
 │   ├── index.html          # Homepage
 │   ├── about.html          # About page
@@ -162,37 +143,71 @@ TechFlow-Solutions/
 │   ├── portfolio.html      # Portfolio page
 │   ├── contact.html        # Contact page
 │   ├── enquiry.html        # Enquiry form
-│   └── file-organization-plan.html
+│   └── sitemap.xml         # XML sitemap for SEO
 │
 ├── 🎨 CSS
-│   ├── styles.css          # Global styles
-│   ├── index.css           # Homepage specific
-│   ├── services.css        # Services page
-│   ├── contact.css         # Contact page
-│   ├── portfolio.css       # Portfolio page
-│   ├── about.css           # About page
-│   └── enquiry.css         # Enquiry form styles
+│   ├── styles.css          # Global styles and CSS variables
+│   ├── header.css          # Header and navigation styles
+│   ├── footer.css          # Footer styles
+│   ├── utilities.css       # Utility classes
+│   ├── responsive.css      # Responsive design styles
+│   ├── special.css         # Special effects and animations
+│   ├── index.css           # Homepage specific styles
+│   ├── about.css           # About page styles
+│   ├── services.css        # Services page styles
+│   ├── portfolio.css       # Portfolio page styles
+│   ├── contact.css         # Contact page styles
+│   ├── enquiry.css         # Enquiry form styles
+│   ├── carousel.css        # Carousel component styles
+│   ├── hamburger-menu.css  # Mobile navigation styles
+│   ├── middle-nav.css      # Middle navigation styles
+│   ├── responsive-nav.css  # Responsive navigation styles
+│   └── media-queries.css   # Media query overrides
 │
 ├── ⚡ JavaScript
-│   ├── navigation.js       # Main navigation
-│   ├── address.js          # Address handling
-│   ├── footer.js           # Footer functionality
-│   ├── head.js             # Header scripts
-│   ├── top.js              # Back-to-top button
-│   ├── maps.js             # Google Maps integration
+│   ├── head.js             # Dynamic head generation
+│   ├── navigation.js       # Navigation highlighting
+│   ├── address.js          # Contact info insertion
+│   ├── footer.js           # Footer generation
+│   ├── top.js              # Scroll-to-top button
 │   ├── carousel.js         # Service carousel
-│   └── service-enquiry.js  # Enquiry form handling
+│   ├── google-form.js      # Google Forms integration
+│   ├── maps.js             # Google Maps embedding
+│   ├── service-enquiry.js  # Service selection handling
+│   └── middle-nav.js       # Middle navigation functionality
 │
 ├── 🖼️ Images
 │   ├── logo.jpeg
-│   ├── service-icons/      # Service icons
-│   ├── screenshots/        # Website screenshots
-│   ├── wireframes/         # Design wireframes
-│   └── favicon/            # Site favicon
+│   ├── responsive/         # Responsive design screenshots
+│   │   ├── Desktop about.jpeg
+│   │   ├── Desktop contact.jpeg
+│   │   ├── Desktop enquiry.jpeg
+│   │   ├── Desktop homepage.jpeg
+│   │   ├── Desktop portfolio.jpeg
+│   │   ├── Desktop services.jpeg
+│   │   ├── Mobile about.jpeg
+│   │   ├── Mobile contact.jpeg
+│   │   ├── Mobile enquirys.jpeg
+│   │   ├── Mobile homepage.jpeg
+│   │   ├── Mobile portfolio.jpeg
+│   │   ├── Mobile services.jpeg
+│   │   ├── Tablet about.jpeg
+│   │   ├── Tablet contact.jpeg
+│   │   ├── Tablet enquiry.jpeg
+│   │   ├── Tablet homepage.jpeg
+│   │   ├── Tablet portfolio.jpeg
+│   │   └── Tablet services.jpeg
+│   ├── Sitemaps.html
+│   ├── Sitemaps_files/
+│   └── WIreframes/
 │
 └── 📄 Documentation
-    ├── README.md           # This file
-    └── TODO.md             # Development tasks
+    ├── README.md           # Project documentation
+    ├── TODO.md             # Development tasks
+    ├── CHANGELOG.md        # Version history
+    ├── website-screenshots.md # Screenshot documentation
+    ├── website-structure-diagram.md # Structure diagrams
+    └── .gitignore          # Git ignore rules
 ```
 
 🗺️ Sitemap
@@ -226,9 +241,18 @@ flowchart TD
 
 ## 📚 References & Resources
 
-### Reference List
-- Google Fonts. (n.d.) *Google Fonts*. Available at: https://fonts.google.com/ (Accessed: 2023).
+### JavaScript References
+- Mozilla Developer Network (MDN). (n.d.) *Document Object Model (DOM)*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model (Accessed: 2023).
 - Mozilla Developer Network (MDN). (n.d.) *Fetch API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 2023).
+- Mozilla Developer Network (MDN). (n.d.) *FormData*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/FormData (Accessed: 2023).
+- Mozilla Developer Network (MDN). (n.d.) *URLSearchParams*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams (Accessed: 2023).
+- Google. (n.d.) *Google Forms API*. Available at: https://developers.google.com/forms/api (Accessed: 2023).
+- Google. (n.d.) *Google Maps Embed API*. Available at: https://developers.google.com/maps/documentation/embed (Accessed: 2023).
+- Font Awesome. (n.d.) *Font Awesome Icons*. Available at: https://fontawesome.com/icons (Accessed: 2023).
+- W3Schools. (n.d.) *JavaScript Slideshow*. Available at: https://www.w3schools.com/howto/howto_js_slideshow.asp (Accessed: 2023).
+
+### General References
+- Google Fonts. (n.d.) *Google Fonts*. Available at: https://fonts.google.com/ (Accessed: 2023).
 - Unsplash. (n.d.) *Unsplash: Beautiful Free Images & Pictures*. Available at: https://unsplash.com/ (Accessed: 2023).
 - W3Schools. (n.d.) *CSS Flexbox*. Available at: https://www.w3schools.com/css/css3_flexbox.asp (Accessed: 2023).
 - Freepik. (n.d.) *Freepik - Free Vectors, Stock Photos & PSD Downloads*. Available at: https://freepik.com/ (Accessed: 2023).
