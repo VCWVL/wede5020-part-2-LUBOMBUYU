@@ -1,4 +1,18 @@
-// Scroll-to-top button functionality
+/**
+ * Implements a scroll-to-top button for improved user navigation on long pages.
+ *
+ * Function: Creates a fixed-position button that appears when scrolling down and smoothly scrolls to the top when clicked.
+ * Usage: Included in pages with scrollable content (index.html, about.html, services.html, contact.html, enquiry.html, portfolio.html).
+ *
+ * References:
+ * - DOMContentLoaded event: Mozilla Developer Network (MDN). (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
+ * - createElement: MDN. (n.d.) *Document.createElement()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement (Accessed: 2023).
+ * - appendChild: MDN. (n.d.) *Node.appendChild()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild (Accessed: 2023).
+ * - window.addEventListener: MDN. (n.d.) *EventTarget.addEventListener()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener (Accessed: 2023).
+ * - window.scrollTo: MDN. (n.d.) *Window.scrollTo()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo (Accessed: 2023).
+ * - CSS fixed positioning: MDN. (n.d.) *position*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/position (Accessed: 2023).
+ */
+
 document.addEventListener('DOMContentLoaded', function () {
     // Create the button
     const btn = document.createElement('button');

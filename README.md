@@ -90,6 +90,51 @@ For detailed screenshots of the website showcasing its design and responsiveness
 | **Design** | Responsive & Mobile-First |
 | **Performance** | Lazy loading, Optimized assets |
 | **Accessibility** | Semantic HTML, ARIA, Keyboard navigation |
+
+## ⚡ JavaScript Files & Functionality
+
+This project uses vanilla JavaScript for dynamic functionality. Below is a detailed breakdown of each JS file, its purpose, usage, and references:
+
+### Core JavaScript Files
+
+| File | Purpose | Usage | References |
+|------|---------|-------|------------|
+| **`js/head.js`** | Dynamically generates essential `<head>` elements (charset, viewport, title, description, stylesheet) for DRY principles | Included in all HTML files as the first script | MDN: DOM manipulation, insertAdjacentHTML, DOMContentLoaded |
+| **`js/navigation.js`** | Highlights active navigation link based on current page URL | Included in all pages with navigation (index.html, about.html, services.html, contact.html, enquiry.html, portfolio.html) | MDN: querySelector, classList, window.location |
+| **`js/address.js`** | Dynamically inserts contact information (phone/email) into header address element | Included in all pages with header navigation | MDN: querySelector, innerHTML, Template literals |
+| **`js/footer.js`** | Generates consistent footer content with social media links and company info | Included in all pages | MDN: querySelector, innerHTML, Font Awesome icons |
+| **`js/top.js`** | Creates and manages a fixed-position "scroll to top" button with smooth scrolling | Included in pages with scrollable content | MDN: createElement, appendChild, window.scrollTo, CSS fixed positioning |
+| **`js/carousel.js`** | Implements responsive service carousel with navigation, indicators, keyboard/touch support | Initializes on homepage (index.html) for services section | MDN: Classes, Touch events, CSS transforms, W3Schools carousel tutorial |
+| **`js/google-form.js`** | Handles enquiry form submission to Google Forms API with validation and feedback | Included in enquiry.html | MDN: URLSearchParams, FormData, Fetch API, Google Forms API |
+| **`js/maps.js`** | Embeds Google Maps iframes for displaying office locations | Included in contact.html | MDN: querySelector, innerHTML, Google Maps Embed API |
+| **`js/service-enquiry.js`** | Enables service item clicks to navigate to enquiry form with pre-selected service | Included in services.html and enquiry.html | MDN: querySelectorAll, addEventListener, encodeURIComponent, Fetch API |
+
+### JavaScript References & Sources
+
+- **Mozilla Developer Network (MDN)**: Primary reference for JavaScript APIs and DOM manipulation
+  - DOM events: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+  - Fetch API: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+  - FormData: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+  - URLSearchParams: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+
+- **Google APIs**:
+  - Google Forms API: https://developers.google.com/forms/api
+  - Google Maps Embed API: https://developers.google.com/maps/documentation/embed
+
+- **Font Awesome**: Icon library used in footer and navigation
+  - https://fontawesome.com/icons
+
+- **W3Schools**: General web development tutorials
+  - Carousel implementation: https://www.w3schools.com/howto/howto_js_slideshow.asp
+  - Form validation: https://www.w3schools.com/js/js_validation.asp
+
+### Notes on JavaScript Implementation
+
+- All scripts use modern ES6+ features with DOMContentLoaded for safe initialization
+- Error handling and accessibility features (ARIA labels) are implemented where applicable
+- Google Forms integration uses 'no-cors' mode for cross-origin requests
+- Touch and keyboard navigation support for better accessibility
+- Responsive behavior with window resize listeners
 ## 🎨 Design System
 
 ### Color Palette
