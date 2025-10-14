@@ -203,11 +203,14 @@ wede5020-part-2-LUBOMBUYU/
 │
 └── 📄 Documentation
     ├── README.md           # Project documentation
-    ├── TODO.md             # Development tasks
-    ├── CHANGELOG.md        # Version history
-    ├── website-screenshots.md # Screenshot documentation
-    ├── website-structure-diagram.md # Structure diagrams
-    └── .gitignore          # Git ignore rules
+    └── docs/               # Documentation folder
+        ├── TODO.md         # Development tasks
+        ├── CHANGELOG.md    # Version history
+        ├── website-screenshots.md # Screenshot documentation
+        ├── website-structure-diagram.md # Structure diagrams
+        ├── .gitignore      # Git ignore rules
+        ├── robots.txt      # SEO robots file
+        └── sitemap.xml     # XML sitemap for SEO
 ```
 
 🗺️ Sitemap
