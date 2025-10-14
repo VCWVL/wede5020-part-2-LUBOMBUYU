@@ -208,6 +208,7 @@ wede5020-part-2-LUBOMBUYU/
         ├── CHANGELOG.md    # Version history
         ├── website-screenshots.md # Screenshot documentation
         ├── website-structure-diagram.md # Structure diagrams
+        ├── file-organization-plan.html # File organization plan
         ├── .gitignore      # Git ignore rules
         ├── robots.txt      # SEO robots file
         └── sitemap.xml     # XML sitemap for SEO
